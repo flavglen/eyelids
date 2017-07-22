@@ -1,0 +1,42 @@
+.circleWrap{
+  position: relative;
+  width:60%;
+  margin:0 auto;
+}
+.circleRight{
+    right: 15px;
+}
+
+.circleLeft{
+left:50px;
+}
+.circle {
+  width: 205px;
+  height: 206px;
+	background: rgb(254,205,29);
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+  position: absolute;
+  top: 43px;
+}
+.circle img{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.circleMiddle {
+	width: 310px;
+	height: 305px;
+
+  position: absolute;
+  left:30%;
+  z-index: 999;
+}
+
+.circleMiddle img{
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}

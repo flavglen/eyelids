@@ -1,1 +1,315 @@
+/*FELXSLIDER OVERRRIDE*/
+.flex-control-nav{
+  bottom:0 !important;
+}
+.flex-prev,.flex-next{
+  display:none !important;
+}
+.flex-control-paging li a{
+  border:1px solid yellow;
+}
+.flex-control-paging li a.flex-active{
+  background:yellow !important
+}
+.flexslider{
+width: 60%;
+margin: 0 auto;
+  background: #000;
+  border:none;
+}
+
+/*Chart style overrride*/
+.ui-node-toggler{
+  display:none;
+}
+.ui-organizationchart .ui-organizationchart-node-content{
+    padding: 1.5em 5.75em !important;
+    border-radius: 5px !important;
+    border: none !important;
+    color:#ed2c69;
+    font-weight: bold;
+    font-size: 18px;
+}
+.ui-organizationchart .ui-organizationchart-line-down{
+  background-color:#000 !important;
+}
+.ui-organizationchart .ui-organizationchart-line-top {
+    border-top: 1px solid #000 !important;
+}
+.ui-organizationchart .ui-organizationchart-line-left {
+    border-right: 1px solid  #000 !important;
+}
 /* You can add global styles to this file, and also import other style files */
+.slide{
+  font-weight: bold;
+  width: 85%;
+}
+.slide h4{
+  line-height:35px;
+}
+.flexWrap{
+  width:100%;
+  background: #000;
+  padding-bottom: 27px;
+}
+.quoteBy{
+  float:right;
+}
+.quoteBy p{
+  margin-bottom: 0;
+}
+.aboutUsText{
+     margin-top: 39%;
+    margin-left: 26%;
+    width: 48%;
+    text-align: center;
+    font-size: 36px;
+	color:#ed2c69;
+}
+.admissonHead{
+    position:absolute;
+    width: 258px;
+    background:url('/assets/img/contact-Us.png');
+    min-height:248px;
+    background-repeat:no-repeat;
+    top: 166px;
+    left: 45px;
+}
+.admissonHead h3{
+  margin-top: 39%;
+ margin-left: 13%;
+ width: 48%;
+ text-align: center;
+ font-size: 36px;
+color:#ed2c69;
+}
+.admissionText1{
+  position:absolute;
+  background:rgb(251, 200, 18);
+  width:50%;
+  z-index:10;
+  left:35%;
+  height: 427px;
+  top: 102px;
+  border-radius:2px;
+}
+.admissionText2{
+  background:url('/assets/img/adminssionImg.png');
+  background-repeat:no-repeat;
+  position:absolute;
+  right:0;
+  width:33%;
+  height:690px;
+  z-index:20;
+  opacity: 0.9;
+}
+#adm{
+  min-height: 690px;
+  width:100%;
+  padding:0;
+  background: #feb329;
+  position: relative;
+}
+.chart{
+  position: absolute;
+  top: 169px;
+  right: 16%;
+  z-index: 50;
+}
+.gCircle{
+  position: absolute;
+  width: 310px;
+  height: 305px;
+  background: #fff;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  left:30%;
+  z-index: 100;
+  bottom:-90px;
+}
+
+.circleInner{
+  position: absolute;
+  width: 297px;
+  height: 290px;
+  background: rgb(210,223,81);
+  z-index: 500;
+  border-radius: 150px;
+  top: 7px;
+  left: 6px;
+  padding: 48px 0 0 25px;
+}
+
+.aboutusWrap{
+  background:url('/assets/img/contact-Us.png');
+  min-height:248px;
+  margin-left: 41px;
+  margin-top: 32px;
+}
+
+.missionWrap{
+  width: 77%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 25px 65px 25px;
+}
+
+.mgt{
+  padding:25px 0;
+  min-height: 500px;
+  background: #000;
+}
+
+.colorPink{
+  color:#ed2c69;
+}
+.margin0_width100{
+  margin:0;
+  width:100%;
+}
+.aboutBg{
+  background:#feb329
+}
+.ownerWrap{
+  margin-top: 351px;
+  text-align:center
+}
+.mgtTeamhead{
+  text-align: center;
+  padding-bottom: 25px;
+}
+.admissionWrapper{
+  background:#feb329;
+}
+.aboutRight{
+  float:right;
+  padding: 27px 20px 14px 21px;
+}
+.missionOuterWrap{
+  background:url('/assets/img/mission.png');
+}
+.admissionText2inner{
+  position:absolute;
+  bottom: 108px;
+  left: 25px;
+}
+.admissionText2inner p{
+  font-size:14px;
+  margin-bottom: 0;
+}
+.admissionText2inner h5{
+  font-size:18px;
+    margin-bottom: 25px;
+}
+.lastDate{
+  margin-top: 25px;
+ margin-left: 32px;
+}
+
+/*button overrirde*/
+.ui-button-text-only .ui-button-text{
+  padding: 1.25em 3em !important;
+  background: #ed2c69 !important;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.ui-widget.ui-button{
+ border: none !important;
+ background: #ed2c69 !important;
+}
+
+
+/**********************************CSS BY NAVEEN********************************************/
+contactUs
+{
+	margin-top:50px;
+	color:white;
+}
+.contactUs address
+{
+	font-size:21px;
+	text-align: left;
+}
+.copyRight
+{
+	background-color:#202020;
+}
+.copyRight p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    color: white;
+}
+.contactBg
+{
+	padding: 0px!important;
+	background-color:#feb329;
+}
+.contactimg
+{
+	margin-top: 85px;
+    margin-bottom: 75px;
+}
+.contact
+{
+	padding:0px!important;
+}
+.map
+{
+		padding: 0px!important;
+}
+.map address {
+    font-size: 21px;
+    text-align: left;
+    line-height: 34px;
+    color: white;
+    padding: 36px 0px 0px 0px;
+}
+.eventsVideobg
+{
+	background-image:url("/assets/img/eventBg.png");
+	/* height:613px; */
+	background-repeat: no-repeat;
+  /*   background-size: contain; */
+    background-position: center center;
+    background-size: 100% auto;
+}
+.evnt
+{
+	background-image:url("/assets/img/eventsBgfirst.png");
+	/* height:613px; */
+	background-repeat: no-repeat;
+  /*   background-size: contain; */
+    background-position: center center;
+    background-size: 100% auto;
+}
+.circullumbg
+{
+	background-image:url("/assets/img/circrbg.png");
+	/* height:613px; */
+	background-repeat: no-repeat;
+  /*   background-size: contain; */
+    background-position: center center;
+    background-size: 100% auto;
+}
+.cicullumbgColor
+{
+	background-color:#faac1b;
+	padding-bottom: 404px;
+
+    padding-top: 404px;
+}
+.circullum
+{
+
+}
+.colorConcepts
+{
+	padding-top:112px;
+}
+.colorConceptsBottom
+{
+	padding-bottom:112px;
+}
