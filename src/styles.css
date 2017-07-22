@@ -1,4 +1,4 @@
-/*FELXSLIDER OVERRR*IDE*/
+/*FELXSLIDER OVERRRIDE*/
 .flex-control-nav{
   bottom:0 !important;
 }
@@ -279,7 +279,7 @@ contactUs
 .evnt
 {
 	background-image:url("/assets/img/eventsBgfirst.png");
-	/* height:613px; ****/
+	/* height:613px; */
 	background-repeat: no-repeat;
   /*   background-size: contain; */
     background-position: center center;
