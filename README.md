@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Eyelids
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
@@ -26,3 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# eyelids
+eye lids project
+>>>>>>> 6e8a49f497e7a511e78d36c597ca2dc880ab0d9f

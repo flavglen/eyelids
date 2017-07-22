@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -40,3 +41,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+=======
+node_modules
+dist
+>>>>>>> 6e8a49f497e7a511e78d36c597ca2dc880ab0d9f
