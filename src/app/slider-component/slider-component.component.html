@@ -1,0 +1,16 @@
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexWrap">
+<div class="flexslider">
+  <ul class="slides colorPink">
+    <li *ngFor="let sd of sliderData">
+     <div class="slide">
+          <h4>{{sd.body}}</h4>
+          <span class="quoteBy">
+            <p>- {{sd.by}}</p>
+            <p>{{sd.desig}}</p>
+          </span>
+     </div>
+    </li>
+  </ul>
+</div>
+</div>
