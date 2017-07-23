@@ -28,7 +28,37 @@
   .aboutRight {
     float:none;
   }
+  .circleWrap{
+    width:100% !important;
+  }
+  .circle{
+    width: 32% !important;
+    height: 112px !important;
+    top:43px !important;
+  }
+  .circleRight{
+    right: 22px!important;
+  }
+  .circleMiddle{
+    width: 49% !important;
+    height: 180px!important;
+    left:21%!important;
+  }
+  .circleLeft {
+    left: 5px !important;
+  }
+  .mgt{
+    min-height: 350px;
+  }
+  .ownerWrap {
+    margin-top: 200px;
 }
+.navbar-toggle{
+  color:#fff;
+}
+
+}
+
 
 @media (max-width: 480px) {
 
