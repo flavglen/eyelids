@@ -249,33 +249,44 @@ color:#ed2c69;
 
 
 /**********************************CSS BY NAVEEN********************************************/
-
+.footerPadding
+{
+  padding: 0px !important;
+}
 .footerBg
 {
 	background-image:url("assets/img/footerBg.png");
-/* 	height:456px; */
+ 	min-height:461px;
 	background-repeat: no-repeat;
   /*   background-size: contain; */
     background-position: center center;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    padding: 0px;
 	
 }
 .logodiv
 {
-	margin-top:165px;
+  margin-top:165px;
+  margin-left:45px;
 }
 .footerMenu
 {
-	margin-top:50px;
-	text-align: left;
+	line-height: 1.7;
+    margin-top: 80px;
+    text-align: left;
 }
 .footerMenu ul{
 	list-style:none;
 }
 .footerMenu ul li a{
-	font-size:21px;
+	font-size:24px;
 	color:white;
 	text-align:left !important;
+}
+.footerMenu ul li a:hover{
+
+  text-decoration:underline;
+  color:#ed2c69;
 }
 .footerMenu ul li{
   margin-bottom: 14px;
@@ -284,15 +295,15 @@ color:#ed2c69;
 
 
 
-contactUs
+.contactUs
 {
 	margin-top:50px;
 	color:white;
 }
-.contactUs address
-{
-	font-size:21px;
-	text-align: left;
+.contactUs address {
+    font-size: 21px;
+    line-height: 1.8;
+    text-align: left;
 }
 .copyRight
 {
@@ -314,6 +325,14 @@ contactUs
 	margin-top: 85px;
     margin-bottom: 75px;
 }
+  .mailLink
+  {
+    color:white;
+  }
+  .fb
+  {
+    padding: 0 0 12px;
+  }
 .contact
 {
 	padding:0px!important;
