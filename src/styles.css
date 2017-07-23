@@ -1,3 +1,30 @@
+/*********************FONTS***********************/
+@font-face {
+    font-family: 'montserratblack';
+    src: url('/assets/fonts/montserrat-black-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('/assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('/assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*****************************************************/
+
 /*FELXSLIDER OVERRRIDE*/
 .flex-control-nav{
   bottom:0 !important;
@@ -23,7 +50,7 @@ margin: 0 auto;
   display:none;
 }
 .ui-organizationchart .ui-organizationchart-node-content{
-    padding: 1.5em 5.75em !important;
+    padding: 1.5em 4.75em !important;
     border-radius: 5px !important;
     border: none !important;
     color:#ed2c69;
@@ -113,7 +140,7 @@ color:#ed2c69;
 .chart{
   position: absolute;
   top: 169px;
-  right: 16%;
+  right: 18%;
   z-index: 50;
 }
 .gCircle{
