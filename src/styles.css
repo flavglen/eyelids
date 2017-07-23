@@ -222,6 +222,41 @@ color:#ed2c69;
 
 
 /**********************************CSS BY NAVEEN********************************************/
+
+.footerBg
+{
+	background-image:url("assets/img/footerBg.png");
+/* 	height:456px; */
+	background-repeat: no-repeat;
+  /*   background-size: contain; */
+    background-position: center center;
+    background-size: 100% auto;
+	
+}
+.logodiv
+{
+	margin-top:165px;
+}
+.footerMenu
+{
+	margin-top:50px;
+	text-align: left;
+}
+.footerMenu ul{
+	list-style:none;
+}
+.footerMenu ul li a{
+	font-size:21px;
+	color:white;
+	text-align:left !important;
+}
+.footerMenu ul li{
+  margin-bottom: 14px;
+}
+
+
+
+
 contactUs
 {
 	margin-top:50px;
@@ -285,14 +320,16 @@ contactUs
     background-position: center center;
     background-size: 100% auto;
 }
-.circullumbg
+.circullumLeftBg
 {
 	background-image:url("/assets/img/circrbg.png");
-	/* height:613px; */
-	background-repeat: no-repeat;
-  /*   background-size: contain; */
+	min-height:1148px;
+  background-repeat: no-repeat;
+   background-size: 100% 100%;
+  /*   background-size: contain; 
     background-position: center center;
     background-size: 100% auto;
+    left:450px;*/
 }
 .cicullumbgColor
 {
@@ -303,7 +340,38 @@ contactUs
 }
 .circullum
 {
+    min-height: 1148px;
+    width: 100%;
+    padding: 0;
+    background: #feb329;
+    position: relative;
+    margin-top:150px;
 
+}
+
+.circullumHead h3 {
+    color: #ed2c69;
+    font-size: 36px;
+    margin-left: 7%;
+    margin-top: 25%;
+    text-align: center;
+    width: 39%;
+}
+.circullumBg
+{
+/*position:absolute;
+   width: 258px;*/
+    background:url('/assets/img/contact-Us.png');
+    min-height:248px;
+   
+    background-repeat:no-repeat;
+    top: 166px;
+    left: 45px;
+}
+.circullumImg
+{
+  margin:0 auto;
+  cursor: pointer;
 }
 .colorConcepts
 {
@@ -313,3 +381,32 @@ contactUs
 {
 	padding-bottom:112px;
 }
+.circullumSub
+{
+    color: white;
+    cursor: pointer;
+    padding-bottom: 18px;
+    padding-top: 10px;
+}
+.faq
+{
+     background-color: #d3df51;
+    min-height: 248px;
+    padding: 24px 100px;
+    
+}
+.faq ol
+{
+  color:#ec2c69;
+  font-size:17px;
+}
+.faq ol li
+{
+  
+  padding-bottom:17px;
+}
+.faq ol li span
+{
+    text-decoration: underline dotted #231f20;
+   
+    }
