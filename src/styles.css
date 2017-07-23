@@ -173,6 +173,7 @@ color:#ed2c69;
   min-height:248px;
   margin-left: 41px;
   margin-top: 32px;
+  background-repeat: no-repeat;
 }
 
 .missionWrap{
@@ -262,7 +263,7 @@ color:#ed2c69;
     background-position: center center;
     background-size: 100% 100%;
     padding: 0px;
-	
+
 }
 .logodiv
 {
@@ -372,7 +373,7 @@ color:#ed2c69;
 	min-height:1148px;
   background-repeat: no-repeat;
    background-size: 100% 100%;
-  /*   background-size: contain; 
+  /*   background-size: contain;
     background-position: center center;
     background-size: 100% auto;
     left:450px;*/
@@ -409,7 +410,7 @@ color:#ed2c69;
    width: 258px;*/
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
-   
+
     background-repeat:no-repeat;
     top: 166px;
     left: 45px;
@@ -439,7 +440,7 @@ color:#ed2c69;
      background-color: #d3df51;
     min-height: 248px;
     padding: 24px 100px;
-    
+
 }
 .faq ol
 {
@@ -448,11 +449,11 @@ color:#ed2c69;
 }
 .faq ol li
 {
-  
+
   padding-bottom:17px;
 }
 .faq ol li span
 {
     text-decoration: underline dotted #231f20;
-   
+
     }

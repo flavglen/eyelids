@@ -1,5 +1,34 @@
 /******ALL RESPONSIVE CSS*****/
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+.navbar-right {
+  height:auto !important;
+  background: #fff;
+  top: 191px;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+   padding-bottom: 10px;
+    color: #000;
+ }
+
+ .navbar-nav>li {
+     margin-left: 14px;
+ }
+ .aboutusWrap{
+   margin-top:0;
+ }
+ .aboutUsText {
+   margin-top: 0  !important;;
+   padding-top: 101px  !important;
+   width: 100%  !important;;
+   text-align: left;
+   padding-left: 38px  !important;
+   margin-left:0;
+  }
+  .aboutRight {
+    float:none;
+  }
+}
 
 @media (max-width: 480px) {
 
