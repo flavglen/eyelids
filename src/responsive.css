@@ -1,5 +1,6 @@
 /******ALL RESPONSIVE CSS*****/
 @media (max-width: 767px) {
+
 .navbar-right {
   height:auto !important;
   background: #fff;
@@ -35,6 +36,10 @@
     width: 32% !important;
     height: 112px !important;
     top:43px !important;
+    background: transparent !important;
+  }
+  .circle>img{
+    border:3px solid rgb(254,179,54);
   }
   .circleRight{
     right: 22px!important;
