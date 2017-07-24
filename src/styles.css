@@ -24,7 +24,9 @@
 
 }
 /*****************************************************/
-
+body{
+ font-family: montserratregular !important;
+}
 /*FELXSLIDER OVERRRIDE*/
 .flex-control-nav{
   bottom:0 !important;
@@ -257,11 +259,11 @@ color:#ed2c69;
 .footerBg
 {
 	background-image:url("assets/img/footerBg.png");
- 	min-height:461px;
+ 	height:456px;
 	background-repeat: no-repeat;
-  /*   background-size: contain; */
-    background-position: center center;
-    background-size: 100% 100%;
+  /*   background-size: contain;
+    background-position: center center; */
+    background-size:contain;
     padding: 0px;
 
 }
@@ -279,10 +281,11 @@ color:#ed2c69;
 .footerMenu ul{
 	list-style:none;
 }
-.footerMenu ul li a{
-	font-size:24px;
-	color:white;
-	text-align:left !important;
+.footerMenu ul li a {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: left;
 }
 .footerMenu ul li a:hover{
 
@@ -301,10 +304,17 @@ color:#ed2c69;
 	margin-top:50px;
 	color:white;
 }
+.contactUs h2
+{
+ font-size: 25px;
+  font-family: montserratbold;
+}
 .contactUs address {
-    font-size: 21px;
+    font-family: montserratbold;
+    font-size: 17px;
     line-height: 1.8;
     text-align: left;
+    letter-spacing: 1px;
 }
 .copyRight
 {
