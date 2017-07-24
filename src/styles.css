@@ -259,11 +259,11 @@ color:#ed2c69;
 .footerBg
 {
 	background-image:url("assets/img/footerBg.png");
- 	height:456px;
+ 	height:auto;
 	background-repeat: no-repeat;
-  /*   background-size: contain;
-    background-position: center center; */
-    background-size:contain;
+  /*   background-size: contain; */
+    background-position: center center;
+    background-size:100% 100%;
     padding: 0px;
 
 }
@@ -376,6 +376,7 @@ color:#ed2c69;
   /*   background-size: contain; */
     background-position: center center;
     background-size: 100% auto;
+    margin-top:40px;
 }
 .circullumLeftBg
 {
@@ -420,15 +421,15 @@ color:#ed2c69;
    width: 258px;*/
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
-
     background-repeat:no-repeat;
-    top: 166px;
+    top: 405px;
     left: 45px;
 }
 .circullumImg
 {
   margin:0 auto;
   cursor: pointer;
+  
 }
 .colorConcepts
 {
