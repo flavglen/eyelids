@@ -61,9 +61,62 @@
 
 
 @media (max-width: 480px) {
-
+/*footer logo overrride*/
+.logodiv {
+    margin: 20px auto 0 75px;
+}
+.footerMenu ul {
+    padding-left: 15px;
+}
+.footerMenu {
+    line-height: 0.8;
+    margin-top: 35px;
+}
+ .footerMenu ul li a {
+    font-size: 15px;
+} 
+.contactUs address {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+.contactUs {
+    margin-top: 6px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.contactUs h2 {
+    font-size: 17px;
+}  
   }
-
+@media (min-width: 481px) and (max-width: 767px) {
+/*footer logo overrride*/
+.logodiv {
+    margin-left: 91px;
+    margin-top: 27px;
+}
+.footerMenu {
+    line-height: 1;
+    margin-top: 41px;
+}
+.contactUs {
+   
+    margin-top: 41px;
+}
+.contactUs h2 {
+    font-size: 17px;
+}
+.contactUs address {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 1px;
+}
+.footerBg {
+    height: auto;
+}
+}
 @media (min-width: 768px) and (max-width: 991px) {
   /*chart overrride*/
   .ui-organizationchart .ui-organizationchart-node-content{
@@ -105,6 +158,32 @@
   .header .header-content{
     height:auto !important;
   }
+/*footer logo overrride*/
+.logodiv {
+    margin-left: 25px;
+    margin-top: 69px;
+}
+.footerMenu {
+    line-height: 1;
+    margin-top: 25px;
+}
+.contactUs {
+   
+    margin-top: 1px;
+}
+.contactUs h2 {
+    font-size: 20px;
+}
+.contactUs address {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 1px;
+}
+.footerBg {
+    height: auto;
+}
 
  }
 
