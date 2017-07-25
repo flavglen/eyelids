@@ -102,7 +102,10 @@
 </section>
 
 <!-- Design by NAVEEN-->
-<section id="circullum" class="circullum">
+<!--circulum component started-->
+<app-circullum-component></app-circullum-component>
+
+<!--<section id="circullum" class="circullum">
 
        <div class="col-lg-4 col-md-4 col-sm-4 circullumBg" >
 
@@ -165,7 +168,7 @@
 </div>
 
 </div>
-</section>
+</section>-->
 
 
 
@@ -200,9 +203,9 @@
 
 <section id="faq" class="faq">
 
-      <div class="container" >
+ <div class="container-fluid" >
         <h1 class="text-center">FAQ- Frequently Asked Questions</h1>
-<ol>
+<ol class="col-sm-8 col-md-8 col-lg-8">
   <li>What is the timings?<br>
   <span>The timings for Eyelids is 10:00 AM-1:00PM</span></li>
 
@@ -218,6 +221,9 @@
   <span>Sorry, at present we do not have  any openings </span></li>
   </ol>
 
+<div  class="col-sm-4 col-md-4 col-lg-4 ">
+ <img src="/assets/img/adminssionBg.png" alt="colorC" class="img-responsive circullumImage"/>
+</div>
   </div>
 
 </section>
@@ -227,7 +233,7 @@
 <section id="contact" class="contact container-fluid ">
   <div class="col-lg-7 col-md-7 col-sm-7 contactBg">
 <div class="col-lg-5 col-md-5 col-sm-5 contactimg">
-  <img src="/assets/img/contactus.png" alt="contact" class="img-responsive" />
+  <img src="/assets/img/contactus.png" alt="contact" class="img-responsive contactUsmap" />
 </div>
   <div class="col-lg-7 col-md-7 col-sm-7 map">
     <address>
@@ -236,9 +242,9 @@
         Vidyaranyapura<br/>
         Bangalore - 560097<br/>
         Mobile:+91 94480 64496<br>
-        Mail:<a href="#" href="mailto:rajip39@gmail.com">E-mail: rajip39@gmail.com</a><br>
+        Mail:<a href="#"  class="mailLink" href="mailto:rajip39@gmail.com">E-mail: rajip39@gmail.com</a><br>
         <span>Follow Us</span><br>
-        <img src="img/followus.png" alt="followus"/>
+        <img class="img-responsive" src="/assets/img/followus.png" alt="followus"/>
         </address>
 
 
@@ -251,3 +257,5 @@
 
 
 </section>
+ <!--Footer-component-->
+ <app-footer-component> </app-footer-component>

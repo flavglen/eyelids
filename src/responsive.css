@@ -125,10 +125,46 @@ margin-left:0 !important;
         bottom: 247px;
   }
 
+  .faq
+{
+    
+    padding: 24px 30px;
+
+}
 }
 
 
 @media (max-width: 480px) {
+/*circullum logo overrride*/
+.circullum {
+    margin-top: 310px;
+    padding: 0px;
+}
+.circullumImage
+{
+    margin: 0 auto;
+    width: 50%;
+}
+.circullumHead h3 {
+    font-size: 21px;
+    margin-left: 31%;
+    margin-top: -28%;
+    width: 39%;
+}
+.circullumBg {
+    left: 30px;
+    min-height: 267px;
+    top: 9px;
+}
+.colorConcepts {
+    padding-top: 0px;
+}
+.circullumSub {
+    padding-top: 0px;
+    padding-bottom: 0px;
+	font-size:17px;
+}
+
 /*footer logo overrride*/
 .logodiv {
     margin: 20px auto 0 75px;
@@ -155,6 +191,32 @@ margin-left:0 !important;
 }
 .contactUs h2 {
     font-size: 17px;
+}
+
+/*faq  overrride*/
+
+.faq {
+    padding: 24px 5px;
+}
+.faq ol li {
+    padding-bottom: 15px;
+}
+
+/*contact us overrride*/
+
+.contactUsmap{
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+}
+.contactimg
+{
+    margin-bottom: 0;
+}
+.map address {
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 20px 0 14px 15px;
 }
   }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -227,14 +289,21 @@ margin-left:0 !important;
     height:auto !important;
   }
   /*Circullum override*/
-  .circullum {
-    min-height: 1000px;
-  }
-  .circullumLeftBg {
-    min-height: 1000px;
-  }
+ .circullumImage
+ {
+     width:83%;
+ }
 .circullumBg {
-    left: 13px;
+    left: 0;
+    top: 200px;
+}
+.circullumHead h3 {
+    margin-left: 16%;
+    margin-top: -48%;
+    font-size: 27px;
+}
+.colorConcepts {
+    padding-top: 0px;
 }
 
 /*footer  overrride*/
@@ -264,6 +333,13 @@ margin-left:0 !important;
     background-position: center center;
     background-size: cover;
     height: auto;
+}
+/*faq override*/
+.faq
+{
+    
+    padding: 24px 30px;
+
 }
 
  }

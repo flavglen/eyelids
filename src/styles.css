@@ -24,7 +24,9 @@
 
 }
 /*****************************************************/
-
+body{
+   font-family: montserratregular !important;
+}
 /*FELXSLIDER OVERRRIDE*/
 .flex-control-nav{
   bottom:0 !important;
@@ -388,32 +390,46 @@ color:#ed2c69;
 .circullum
 {
     min-height: 1148px;
-    width: 100%;
+    /*width: 100%;
     padding: 0;
-    background: #feb329;
+    background: #feb329;*/
     position: relative;
     margin-top:150px;
+    	background-image:url("/assets/img/circullumNewBg.png");
+	   height:auto;
+    background-repeat: no-repeat;
+   background-size: 100% 100%;
 
+}
+.circullumHead
+{
+  
 }
 
 .circullumHead h3 {
     color: #ed2c69;
     font-size: 36px;
-    margin-left: 7%;
-    margin-top: 25%;
+    margin-left: 10%;
+    margin-top: -34%;
     text-align: center;
     width: 39%;
 }
 .circullumBg
 {
 /*position:absolute;
-   width: 258px;*/
+   width: 258px;
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
+<<<<<<< HEAD
 
     background-repeat:no-repeat;
     top: 166px;
   /*  left: 45px;*/
+=======
+    background-repeat:no-repeat;*/
+    top: 280px;
+    left: 45px;
+>>>>>>> 46a15e9f1cff95fdefeb3e2ae6771c5e2f8fe3c5
 }
 .circullumImg
 {
@@ -422,7 +438,7 @@ color:#ed2c69;
 }
 .colorConcepts
 {
-	padding-top:112px;
+	padding-top:0px;
 }
 .colorConceptsBottom
 {
@@ -437,7 +453,7 @@ color:#ed2c69;
 }
 .faq
 {
-     background-color: #d3df51;
+    background-color: #d3df51;
     min-height: 248px;
     padding: 24px 100px;
 
@@ -455,5 +471,5 @@ color:#ed2c69;
 .faq ol li span
 {
     text-decoration: underline dotted #231f20;
-
+    padding-left: 22px;
     }
