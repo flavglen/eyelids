@@ -170,6 +170,7 @@ color:#ed2c69;
   padding: 48px 0 0 25px;
 }
 
+
 .aboutusWrap{
   background:url('/assets/img/contact-Us.png');
   min-height:248px;
@@ -403,7 +404,7 @@ color:#ed2c69;
 }
 .circullumHead
 {
-  
+
 }
 
 .circullumHead h3 {
@@ -420,16 +421,16 @@ color:#ed2c69;
    width: 258px;
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
-<<<<<<< HEAD
+
 
     background-repeat:no-repeat;
     top: 166px;
   /*  left: 45px;*/
-=======
+
     background-repeat:no-repeat;*/
     top: 280px;
     left: 45px;
->>>>>>> 46a15e9f1cff95fdefeb3e2ae6771c5e2f8fe3c5
+
 }
 .circullumImg
 {
