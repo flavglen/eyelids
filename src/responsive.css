@@ -121,20 +121,29 @@ margin-left:0 !important;
       margin-top: 0;
   }
 
-  .admissionText2inner{
+.admissionText2inner{
         bottom: 247px;
   }
 
-  .faq
-{
-    
+.faq
+{  
     padding: 24px 30px;
-
+}
+.faqImg
+{
+margin: 0 auto;
 }
 }
 
 
 @media (max-width: 480px) {
+
+/*slider overrride*/
+.slide h4 {
+    line-height: 27px;
+    font-size:15px;
+}
+
 /*circullum logo overrride*/
 .circullum {
     margin-top: 310px;
@@ -147,14 +156,14 @@ margin-left:0 !important;
 }
 .circullumHead h3 {
     font-size: 21px;
-    margin-left: 31%;
-    margin-top: -28%;
-    width: 39%;
+    margin-left: 11%;
+    margin-top: 20%;
+    position: absolute;
 }
 .circullumBg {
-    left: 30px;
+    left: 53px;
     min-height: 267px;
-    top: 9px;
+    top: 76px;
 }
 .colorConcepts {
     padding-top: 0px;
@@ -179,6 +188,18 @@ margin-left:0 !important;
  .footerMenu ul li a {
     font-size: 15px;
 }
+
+/*About overrride*/
+.aboutRight, .missionWrap p
+{
+font-size:15px;
+}
+.admissionText2inner {
+    bottom: 316px;
+}
+.gCircle {
+    left: 2%;
+}
 .contactUs address {
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -200,6 +221,12 @@ margin-left:0 !important;
 }
 .faq ol li {
     padding-bottom: 15px;
+}
+.faqTitle {
+    top: 24px;
+}
+.faqTitle h3{
+    font-size: 8px;
 }
 
 /*contact us overrride*/
@@ -298,9 +325,9 @@ margin-left:0 !important;
     top: 200px;
 }
 .circullumHead h3 {
-    margin-left: 16%;
-    margin-top: -48%;
-    font-size: 27px;
+    font-size: 21px;
+    margin-left: 11%;
+    margin-top: 19%;
 }
 .colorConcepts {
     padding-top: 0px;
@@ -336,10 +363,15 @@ margin-left:0 !important;
 }
 /*faq override*/
 .faq
-{
-    
+{ 
     padding: 24px 30px;
+}
+.faqTitle {
+    top: 34px;
+}
 
+.faqTitle h3 {
+ font-size:11px;
 }
 
  }
@@ -365,6 +397,14 @@ margin-left:0 !important;
 }
 .contactUs address {
     line-height: 1.3;
+}
+
+/*faq css override*/
+.faqTitle h3 {
+   font-size: 16px;
+}
+.faqTitle {
+    top: 64px;
 }
  }
 
