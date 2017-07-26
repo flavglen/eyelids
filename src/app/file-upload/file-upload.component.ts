@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FileUploadComponent implements OnInit {
  mediaType;
- selectedType:Object;
+ selectedType:{id:number,name:string,code:string};
+ selectedCategory:{};
  imageCategory;
   constructor() { }
 
@@ -19,7 +20,7 @@ export class FileUploadComponent implements OnInit {
         this.imageCategory=[];
         this.imageCategory.push({label:'Category1', value:{id:1, name: 'Category1', code: 'NY'}});
         this.imageCategory.push({label:'Category2', value:{id:2, name: 'Category2', code: 'RM'}});
-        this.imageCategory.push({label:'Category3', value:{id:2, name: 'Category3', code: 'RM'}});
+        this.imageCategory.push({label:'Category3', value:{id:3, name: 'Category3', code: 'RM'}});
   }
 
 }
