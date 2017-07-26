@@ -196,8 +196,19 @@
 
       <div class="container" >
 
-      <img src="/assets/img/eventVideo.png" alt="eventVideo" class="img-responsive"/>
+    <!-- <img src="/assets/img/eventVideo.png" alt="eventVideo" class="img-responsive"/>
+       <div class="video">
+    <video controls (click)="toggleVideo()" #videoPlayer>
+        <source src="{{videoSource}}" type="video/mp4" />
+        Browser not supported
+    </video>-->
+  <video  autoplay>
+  <source src="/assets/video/events.mp4" type="video/mp4">
+  <source src="/assets/video/events.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
 </div>
+
 
 </section>
 
@@ -222,7 +233,7 @@
   </ol>
 
 <div  class="col-sm-4 col-md-4 col-lg-4 ">
- <img src="/assets/img/adminssionBg.png" alt="colorC" class="img-responsive circullumImage"/>
+ <img src="/assets/img/faqCircle.png" alt="colorC" class="img-responsive circullumImage"/>
 </div>
   </div>
 

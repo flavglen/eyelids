@@ -476,3 +476,7 @@ color:#ed2c69;
     text-decoration: underline dotted #231f20;
     padding-left: 22px;
     }
+video {
+    width: 100%;
+    height: 535px;
+}
