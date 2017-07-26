@@ -417,19 +417,12 @@ color:#ed2c69;
 }
 .circullumBg
 {
-/*position:absolute;
-   width: 258px;
+
+    width: 258px;
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
-
-
     background-repeat:no-repeat;
-    top: 166px;
-  /*  left: 45px;*/
 
-    background-repeat:no-repeat;*/
-    top: 280px;
-    left: 45px;
 
 }
 .circullumImg

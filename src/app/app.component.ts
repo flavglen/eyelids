@@ -1,6 +1,6 @@
 import { Component ,OnInit,} from '@angular/core';
 import {TreeNode} from 'primeng/primeng';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +12,10 @@ export class AppComponent   implements OnInit{
   title = 'app';
   cars: any[];
   data: TreeNode[];
-
+  constructor(private _router:Router) {  }
+  currentUrl:any;
   ngOnInit() {
+    this._router.events.subscribe((url:any) => this.currentUrl =url.url);
     this.data = [{
           label: 'Integrated',
           expanded: true,
@@ -25,7 +27,6 @@ export class AppComponent   implements OnInit{
                            label: 'Kindergarten'
                        }
                    ]
-
          }];
 
     this.cars = [
