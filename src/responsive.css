@@ -1,9 +1,11 @@
 /******ALL RESPONSIVE CSS*****/
 @media (max-width: 767px) {
   header{
-
     background-size: cover;
   }
+  .flex-control-nav {
+    bottom: -26px !important;
+}
   .logo{
     position: absolute;
     top: 32px;
