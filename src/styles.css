@@ -411,10 +411,11 @@ color:#ed2c69;
 .circullumHead h3 {
     color: #ed2c69;
     font-size: 36px;
-    margin-left: 10%;
-    margin-top: -34%;
+    margin-left: 12%;
+    margin-top: 22%;
     text-align: center;
     width: 39%;
+    position:absolute;
 }
 .circullumBg
 {
