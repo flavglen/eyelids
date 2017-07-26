@@ -121,15 +121,17 @@ margin-left:0 !important;
       margin-top: 0;
   }
 
-  .admissionText2inner{
+.admissionText2inner{
         bottom: 247px;
   }
 
-  .faq
-{
-    
+.faq
+{  
     padding: 24px 30px;
-
+}
+.faqImg
+{
+margin: 0 auto;
 }
 }
 
@@ -154,14 +156,14 @@ margin-left:0 !important;
 }
 .circullumHead h3 {
     font-size: 21px;
-    margin-left: 31%;
-    margin-top: -28%;
-    width: 39%;
+    margin-left: 11%;
+    margin-top: 20%;
+    position: absolute;
 }
 .circullumBg {
-    left: 30px;
+    left: 53px;
     min-height: 267px;
-    top: 9px;
+    top: 76px;
 }
 .colorConcepts {
     padding-top: 0px;
@@ -219,6 +221,12 @@ font-size:15px;
 }
 .faq ol li {
     padding-bottom: 15px;
+}
+.faqTitle {
+    top: 24px;
+}
+.faqTitle h3{
+    font-size: 8px;
 }
 
 /*contact us overrride*/
@@ -355,10 +363,15 @@ font-size:15px;
 }
 /*faq override*/
 .faq
-{
-    
+{ 
     padding: 24px 30px;
+}
+.faqTitle {
+    top: 34px;
+}
 
+.faqTitle h3 {
+ font-size:11px;
 }
 
  }
@@ -384,6 +397,14 @@ font-size:15px;
 }
 .contactUs address {
     line-height: 1.3;
+}
+
+/*faq css override*/
+.faqTitle h3 {
+   font-size: 16px;
+}
+.faqTitle {
+    top: 64px;
 }
  }
 
