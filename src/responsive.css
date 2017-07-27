@@ -111,8 +111,8 @@ margin-left:0 !important;
     padding: 1.5em 0.75em !important;
 }
 .gCircle{
-  left: 9%;
-    bottom: -305px;
+    left: 9%;
+    bottom: -307px;
 }
 .admissionText2{
       position: static;
@@ -144,11 +144,31 @@ margin: 0 auto;
 
 
 @media (max-width: 480px) {
-
+   
+.logo {
+    left: 0;
+    position: absolute;
+    top: 9px;
+}
+.imgLogo{
+    max-width: 100%;
+}
 /*slider overrride*/
 .slide h4 {
     line-height: 27px;
     font-size:15px;
+}
+.lastDate {
+    margin-left: 25px;
+    margin-top: 12px;
+}
+.admissionWrapper {
+    padding: 20px;
+}
+/*About overrride*/
+
+.aboutusWrap {
+    margin: 15px 0px 15px 20px;
 }
 
 /*circullum logo overrride*/
@@ -161,14 +181,18 @@ margin: 0 auto;
     margin: 0 auto;
     width: 50%;
 }
-
 .circullumBg {
     left: 0;
     min-height: 267px;
     top: 15px;
+    margin-bottom: 15px;
 }
 .colorConcepts {
     padding-top: 0px;
+}
+.circullumRightBg
+{
+     padding-top: 50px;
 }
 .circullumSub {
     padding-top: 0px;
@@ -233,6 +257,22 @@ font-size:15px;
 .faqTitle h3{
     font-size: 8px;
 }
+.faqHead {
+   font-size: 25px;
+    margin-bottom: 39px;
+}
+/*eventsVideo override*/
+.eventsVideobg {
+    height: 183px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.evnt {
+    padding-bottom: 0;
+    padding-top: 20px;
+     background-size: 100% 100%;
+    margin-top: 20px;
+}
 
 /*contact us overrride*/
 
@@ -244,6 +284,9 @@ font-size:15px;
 .contactimg
 {
     margin-bottom: 0;
+    margin-top: 25px;
+    padding-left: 32px;
+    padding-top: 15px;
 }
 .map address {
     font-size: 15px;
@@ -298,7 +341,7 @@ font-size:15px;
       margin-left: 12px;
   }
   .admissonHead{
-    left:9px;
+    left:1px;
   }
 .circullumHead {
     top: 152px;
@@ -334,6 +377,8 @@ font-size:15px;
       margin: 0 auto;
       background-size: contain;
       background-repeat: no-repeat;
+      top:15px;
+ 
   }
   .header .header-content{
     height:auto !important;

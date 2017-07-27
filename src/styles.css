@@ -502,5 +502,9 @@ video {
   font-family: montserratregular !important;
 }
 .ui-organizationchart .ui-organizationchart-node-content {
+   font-family: montserratregular !important;
+    font-weight: bold !important;;
+}
+.ui-button-text-only .ui-button-text {
     font-weight: inherit;
 }
