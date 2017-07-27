@@ -1,6 +1,6 @@
 
  <router-outlet></router-outlet>
- 
+
 <!--naveen comment -->
 <div *ngIf="currentUrl !=='/upload'">
 <!--Slider component-->
@@ -114,17 +114,21 @@
 <section id="events" class=" container-fluid evnt">
    <div class="container" >
       <div class="col-lg-4 col-md-4 col-sm-4 " >
-
-      <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
+      <a (click)="galletyModalDisplay=true">
+       <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
+     </a>
 </div>
 
 
 <div class="col-lg-4 col-md-4 col-sm-4 " >
+    <a (click)="galletyModalDisplay=true">
           <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
-
+    </a>
 </div>
-<div class="col-lg-4 col-md-4 col-sm-4 " >
-          <img src="/assets/img//\colorsday.png" alt="colorC" class="img-responsive"/>
+<div class="col-lg-4 col-md-4 col-sm-4 ">
+    <a (click)="galletyModalDisplay=true">
+          <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
+    </a>
 
 </div>
 </div>
@@ -212,3 +216,8 @@ Feel free to <br> contact us</h3>
 
 </section>
 </div>
+
+<!--Gallery Dialog -->
+<p-dialog header="Title" [(visible)]="galletyModalDisplay">
+    <p-galleria [images]="images" panelWidth="500" panelHeight="313"  [showCaption]="false" [showCaption]="true"></p-galleria>
+</p-dialog>
