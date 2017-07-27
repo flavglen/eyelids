@@ -106,11 +106,11 @@ margin: 0 auto;
 }
 .admissonHead h3{
   margin-top: 39%;
- margin-left: 13%;
- width: 48%;
- text-align: center;
- font-size: 36px;
-color:#ed2c69;
+  margin-left: 13%;
+  width: 48%;
+  text-align: center;
+  font-size: 36px;
+  color:#ed2c69;
 }
 .admissionText1{
   position:absolute;
@@ -387,45 +387,57 @@ color:#ed2c69;
 	background-color:#faac1b;
 	padding-bottom: 404px;
 
-    padding-top: 404px;
+  padding-top: 404px;
 }
 .circullum
 {
     min-height: 1148px;
-    /*width: 100%;
+    
     padding: 0;
-    background: #feb329;*/
+    background: #feb329;
     position: relative;
     margin-top:150px;
-    	background-image:url("/assets/img/circullumNewBg.png");
-	   height:auto;
-    background-repeat: no-repeat;
-   background-size: 100% 100%;
-
-}
-.circullumHead
-{
+    
 
 }
 
-.circullumHead h3 {
-    color: #ed2c69;
-    font-size: 36px;
-    margin-left: 12%;
-    margin-top: 22%;
-    text-align: center;
-    width: 39%;
+.circullumHead {
     position:absolute;
-}
-.circullumBg
-{
-
     width: 258px;
     background:url('/assets/img/contact-Us.png');
     min-height:248px;
     background-repeat:no-repeat;
+    top: 446px;
+    left: 45px;
+}
 
 
+.circullumHead h3 {
+  margin-top: 39%;
+  margin-left: 18%;
+  width: 48%;
+  text-align: center;
+  font-size: 36px;
+  color:#ed2c69;
+}
+.circullumBg
+{
+
+    
+    /*background:url('/assets/img/contact-Us.png');
+    min-height:248px;
+    background-repeat:no-repeat;*/
+
+
+}
+.circullumRightBg
+{
+    min-height: 1148px;
+    position: relative;
+    padding-top:150px;
+    background-image:url("/assets/img/circullumNewBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .circullumImg
 {
@@ -488,5 +500,7 @@ video {
   margin-bottom: 90px;
   font-size: 30px;
   font-family: montserratregular !important;
-
+}
+.ui-organizationchart .ui-organizationchart-node-content {
+    font-weight: inherit;
 }

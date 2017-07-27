@@ -86,6 +86,11 @@ section.download{
   margin: 0 auto;
   padding-top: 100px;
 }
+.circullumHead{
+  position: static;
+  margin: 0 auto;
+  padding-top: 100px;
+}
 
 .admissionText1{
     position: static;
@@ -120,7 +125,9 @@ margin-left:0 !important;
   .admissonHead h3{
       margin-top: 0;
   }
-
+.circullumHead h3{
+      margin-top: 0;
+  }
 .admissionText2inner{
         bottom: 247px;
   }
@@ -154,16 +161,11 @@ margin: 0 auto;
     margin: 0 auto;
     width: 50%;
 }
-.circullumHead h3 {
-    font-size: 21px;
-    margin-left: 11%;
-    margin-top: 20%;
-    position: absolute;
-}
+
 .circullumBg {
-    left: 53px;
+    left: 0;
     min-height: 267px;
-    top: 76px;
+    top: 15px;
 }
 .colorConcepts {
     padding-top: 0px;
@@ -172,6 +174,9 @@ margin: 0 auto;
     padding-top: 0px;
     padding-bottom: 0px;
 	font-size:17px;
+}
+.circullumHead h3 {
+    padding-left: 12px;
 }
 
 /*footer logo overrride*/
@@ -247,6 +252,16 @@ font-size:15px;
 }
   }
 @media (min-width: 481px) and (max-width: 767px) {
+
+/*circullum overrride*/
+.circullum {
+
+    margin-top: 312px;
+}
+.circullumBg
+{
+    top:2px;
+}
 /*footer logo overrride*/
 .logodiv {
     margin-left: 91px;
@@ -285,6 +300,14 @@ font-size:15px;
   .admissonHead{
     left:9px;
   }
+.circullumHead {
+    top: 152px;
+    left: 9px;
+}
+.circullumSub
+{
+    font-size:16px!important;;
+}
   .circleWrap{
     width:100% !important;
   }
@@ -324,11 +347,7 @@ font-size:15px;
     left: 0;
     top: 200px;
 }
-.circullumHead h3 {
-    font-size: 21px;
-    margin-left: 11%;
-    margin-top: 19%;
-}
+
 .colorConcepts {
     padding-top: 0px;
 }
