@@ -12,9 +12,16 @@ export class AppComponent   implements OnInit{
   title = 'app';
   cars: any[];
   data: TreeNode[];
+  galletyModalDisplay:boolean;
+  images: any[];
   constructor(private _router:Router) {  }
   currentUrl:any;
   ngOnInit() {
+    this.images = [];
+    this.images.push({source:'assets/img/logo.png', alt:'Description for Image 1', title:'Title 1'});
+      this.images.push({source:'assets/img/conversations.png', alt:'Description for Image 1', title:'Title 1'});
+        this.images.push({source:'assets/img/greeting.png', alt:'Description for Image 1', title:'Title 1'});
+    this.galletyModalDisplay=false;
     this._router.events.subscribe((url:any) => this.currentUrl =url.url);
     this.data = [{
           label: 'Integrated',

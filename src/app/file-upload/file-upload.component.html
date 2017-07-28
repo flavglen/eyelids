@@ -10,7 +10,7 @@
             <p-dropdown [options]="imageCategory" styleClass="form-control"  [(ngModel)]="selectedCategory"></p-dropdown>
         </div>
 
-        <p-fileUpload  [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="./upload.php" multiple="multiple"></p-fileUpload>
+        <p-fileUpload  [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="api/upload.php" multiple="multiple"></p-fileUpload>
      </div>
   </div>
 </div>

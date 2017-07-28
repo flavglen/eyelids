@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import {CarouselModule, OrganizationChartModule,ButtonModule,FileUploadModule,DropdownModule } from 'primeng/primeng';
+import {CarouselModule, OrganizationChartModule,DialogModule,ButtonModule,FileUploadModule,DropdownModule,GalleriaModule} from 'primeng/primeng';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderComponentComponent } from './slider-component/slider-component.component';
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     FileUploadComponent
   ],
   imports: [
-    BrowserModule,FileUploadModule,FormsModule,CarouselModule,DropdownModule,OrganizationChartModule,BrowserAnimationsModule,ButtonModule,RouterModule.forRoot(appRoutes)
+    BrowserModule,GalleriaModule,DialogModule,FileUploadModule,FormsModule,CarouselModule,DropdownModule,OrganizationChartModule,BrowserAnimationsModule,ButtonModule,RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
