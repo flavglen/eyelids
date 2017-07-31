@@ -7,29 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponentComponent implements OnInit {
 footerData:any[];
-  constructor() { }
+currentUser:object;
+  constructor() {
+    /*check i\user logggedin*/
+    let tok=sessionStorage.getItem('currentUser');
+    this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):{};
+  }
 
  ngOnInit() {
     this.footerData=[{
       footerMenu:'Home'
     },
-   { 
-      footerMenu:'About Us' 
+   {
+      footerMenu:'About Us'
     },
     {
-      footerMenu:'Admission'   
+      footerMenu:'Admission'
     },
     {
-      footerMenu:'Circullam'   
-    },
-    { 
-      footerMenu:'Events' 
+      footerMenu:'Circullam'
     },
     {
-      footerMenu:'FAQ'   
+      footerMenu:'Events'
     },
     {
-      footerMenu:'Contact Us'   
+      footerMenu:'FAQ'
+    },
+    {
+      footerMenu:'Contact Us'
     }
   ]
   }

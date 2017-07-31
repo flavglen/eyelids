@@ -10,9 +10,12 @@ import { CircullumComponentComponent } from './circullum-component/circullum-com
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import {FileUploadComponent} from './file-upload/file-upload.component'
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './guard.service';
 
 const appRoutes: Routes = [
-  { path: 'upload', component: FileUploadComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'upload', component: FileUploadComponent,canActivate: [AuthGuard]},
 ];
 
 
@@ -22,12 +25,13 @@ const appRoutes: Routes = [
     SliderComponentComponent,
     CircullumComponentComponent,
     FooterComponentComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,HttpModule,GalleriaModule,DialogModule,FileUploadModule,FormsModule,CarouselModule,DropdownModule,OrganizationChartModule,BrowserAnimationsModule,ButtonModule,RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

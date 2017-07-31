@@ -20,7 +20,12 @@ export class AppComponent   implements OnInit{
   imageCategory:any[];
   currentId:number=0;
   displayLogin:boolean=false;
-  constructor(private _router:Router,private ws:WebapiService) {  }
+  currentUser:Object;
+  constructor(private _router:Router,private ws:WebapiService) {
+      /*check i\user logggedin*/
+      let tok=sessionStorage.getItem('currentUser');
+      this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):{};
+    }
   currentUrl:any;
   ngOnInit() {
     this.images = [];
@@ -71,8 +76,6 @@ export class AppComponent   implements OnInit{
     .catch((error) => console.error(error));
   }
 
-  login() {
-      alert();
-  }
+
 
 }

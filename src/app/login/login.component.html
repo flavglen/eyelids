@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <form class="form-horizontal" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+<div class="form-group">
+  <label class="control-label col-sm-2" for="email">username:</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control" name="name" placeholder="Enter username" [(ngModel)]="model.username" #username="ngModel" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2" for="pwd">Password:</label>
+  <div class="col-sm-10">
+    <input type="password" class="form-control" name="pwd" placeholder="Enter password" [(ngModel)]="model.password" #password="ngModel" required >
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button  class="btn btn-default">Submit</button>
+  </div>
+</div>
+</form>
+</div>
+</div>

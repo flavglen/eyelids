@@ -1,6 +1,6 @@
 <footer class="footerPadding">
 	 <div class="container-fluid footerBg">
-        
+
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 logodiv"><a href="index.html" >
 			<img src="/assets/img/logo.png" class="img-responsive" alt="logo.png"></a></div>
 			<div class="col-lg-2 col-md-4 col-sm-3 col-xs-6 footerMenu">
@@ -8,6 +8,10 @@
                 <li *ngFor="let footData of footerData">
                     <a href="#"> {{footData.footerMenu}}</a>
                 </li>
+
+								<li><a *ngIf="!currentUser" [routerLink]="['/login']">Login</a></li>
+								<li><a *ngIf="currentUser && currentUser.username" [routerLink]="['/']">Logout</a></li>
+								<li><a *ngIf="currentUser && currentUser.username" [routerLink]="['/upload']">Upload</a></li>
                <!-- <li>
                     <a href="#">About Us</a>
                 </li>
@@ -26,9 +30,9 @@
                  <li>
                     <a href="#">Contact Us</a>
                 </li>-->
-              
+
             </ul>
-       
+
 		 </div>
 		 <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 contactUs pull-right">
 		 <h2 class="text-left">Contact Us</h2>
@@ -46,6 +50,6 @@
 		 </div>
 		<div class="container-fluid copyRight">
             <p>copyright @eyelids2017 </p>
-            
+
         </div>
     </footer>
