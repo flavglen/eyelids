@@ -1,26 +1,30 @@
 import { Component ,OnInit,} from '@angular/core';
 import {TreeNode} from 'primeng/primeng';
 import { Router } from '@angular/router';
+import {WebapiService} from './webapi.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[WebapiService]
 })
 export class AppComponent   implements OnInit{
 
   title = 'app';
+  model: any = {};
   cars: any[];
   data: TreeNode[];
   galletyModalDisplay:boolean;
   images: any[];
-  constructor(private _router:Router) {  }
+  imageCategory:any[];
+  currentId:number=0;
+  displayLogin:boolean=false;
+  constructor(private _router:Router,private ws:WebapiService) {  }
   currentUrl:any;
   ngOnInit() {
     this.images = [];
-    this.images.push({source:'assets/img/logo.png', alt:'Description for Image 1', title:'Title 1'});
-      this.images.push({source:'assets/img/conversations.png', alt:'Description for Image 1', title:'Title 1'});
-        this.images.push({source:'assets/img/greeting.png', alt:'Description for Image 1', title:'Title 1'});
+    this.imageCategory=[];
     this.galletyModalDisplay=false;
     this._router.events.subscribe((url:any) => this.currentUrl =url.url);
     this.data = [{
@@ -42,7 +46,33 @@ export class AppComponent   implements OnInit{
          {vin: 'h453w54', year: 2012, brand: 'Honda', color: 'Blue'},
          {vin: 'g43gwwg', year: 1998, brand: 'Renault', color: 'White'}
        ]
+
+       this.ws.getImageCategory().then((result)=>{
+             this.imageCategory=result;
+       })
+       .catch((error) => console.error(error));
   }
 
+ loadGallery(categoryId){
+     this.galletyModalDisplay = true;
+     /*Fetch image by category*/
+     this.ws.getImagesByCategory(categoryId).then((result)=>{
+        this.images=result;
+     })
+     .catch((error) => console.error(error));
+  }
+
+  saveCategory(data){
+    this.ws.saveCategory(data).then((result)=>{
+        if(result===1){
+          data.enabled=false;
+        }
+    })
+    .catch((error) => console.error(error));
+  }
+
+  login() {
+      alert();
+  }
 
 }

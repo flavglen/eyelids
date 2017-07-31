@@ -5,12 +5,10 @@
           <div class="form-group">
             <p-dropdown [options]="mediaType" styleClass="form-control" [(ngModel)]="selectedType"></p-dropdown>
          </div>
-
          <div class="form-group" *ngIf="selectedType?.id ===1">
             <p-dropdown [options]="imageCategory" styleClass="form-control"  [(ngModel)]="selectedCategory"></p-dropdown>
         </div>
-
-        <p-fileUpload  [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="api/upload.php" multiple="multiple"></p-fileUpload>
+        <p-fileUpload (onBeforeUpload)="customUpload($event)" [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="http://eyelids.in/api/upload.php" multiple="multiple"></p-fileUpload>
      </div>
   </div>
 </div>

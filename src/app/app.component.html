@@ -6,7 +6,6 @@
 <!--Slider component-->
 <app-slider-component> </app-slider-component>
 
-
 <!--about-->
 <section id="download" class="download bg-primary">
     <div class="container margin0_width100">
@@ -113,24 +112,15 @@
 
 <section id="events" class=" container-fluid evnt">
    <div class="container" >
-      <div class="col-lg-4 col-md-4 col-sm-4 " >
-      <a (click)="galletyModalDisplay=true">
-       <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
+    <div class="col-lg-4 col-md-4 col-sm-4 " *ngFor="let x of imageCategory">
+        <input pInputText  [disabled]="!x.enabled" [(ngModel)]="x.value.name">
+        <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="saveCategory(x)">Save</button>
+        <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="x.enabled=false">Cancel</button>
+        <button [hidden]="x.enabled" class="ui-button-info" style="color:#000" (click)="x.enabled=true">Edit</button>
+      <a (click)="loadGallery(x.value.id)">
+       <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive">
      </a>
-</div>
-
-
-<div class="col-lg-4 col-md-4 col-sm-4 " >
-    <a (click)="galletyModalDisplay=true">
-          <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
-    </a>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 ">
-    <a (click)="galletyModalDisplay=true">
-          <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive"/>
-    </a>
-
-</div>
+  </div>
 </div>
 
 </section>
@@ -218,6 +208,29 @@ Feel free to <br> contact us</h3>
 </div>
 
 <!--Gallery Dialog -->
-<p-dialog header="Title" [(visible)]="galletyModalDisplay">
-    <p-galleria [images]="images" panelWidth="500" panelHeight="313"  [showCaption]="false" [showCaption]="true"></p-galleria>
+<p-dialog header="Eyelids" [(visible)]="galletyModalDisplay">
+  <p-galleria effect="slide" [images]="images" panelWidth="500" panelHeight="313" [showCaption]="false"></p-galleria>
 </p-dialog>
+
+<!--login
+<p-dialog header="Login into Eyelids" modal="modal"   [(visible)]="displayLogin" [width]="450">
+  <form class="form-horizontal" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+<div class="form-group">
+  <label class="control-label col-sm-2" for="email">username:</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control" id="email" placeholder="Enter username" [(ngModel)]="model.username" #username="ngModel" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-sm-2" for="pwd">Password:</label>
+  <div class="col-sm-10">
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" [(ngModel)]="model.password" #password="ngModel" required >
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <button  class="btn btn-default">Submit</button>
+  </div>
+</div>
+</form>
+</p-dialog>-->
