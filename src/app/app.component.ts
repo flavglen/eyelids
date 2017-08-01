@@ -20,11 +20,11 @@ export class AppComponent   implements OnInit{
   imageCategory:any[];
   currentId:number=0;
   displayLogin:boolean=false;
-  currentUser:Object;
+  currentUser:{username:string,token:string};
   constructor(private _router:Router,private ws:WebapiService) {
       /*check i\user logggedin*/
       let tok=sessionStorage.getItem('currentUser');
-      this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):{};
+      this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):null;
     }
   currentUrl:any;
   ngOnInit() {
@@ -68,7 +68,7 @@ export class AppComponent   implements OnInit{
   }
 
   saveCategory(data){
-    this.ws.saveCategory(data).then((result)=>{
+    this.ws.saveCategory(data,this.currentUser.token).then((result)=>{
         if(result===1){
           data.enabled=false;
         }

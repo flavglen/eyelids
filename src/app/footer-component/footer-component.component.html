@@ -10,7 +10,7 @@
                 </li>
 
 								<li><a *ngIf="!currentUser" [routerLink]="['/login']">Login</a></li>
-								<li><a *ngIf="currentUser && currentUser.username" [routerLink]="['/']">Logout</a></li>
+								<li><a *ngIf="currentUser && currentUser.username" (click)="logout()">Logout</a></li>
 								<li><a *ngIf="currentUser && currentUser.username" [routerLink]="['/upload']">Upload</a></li>
                <!-- <li>
                     <a href="#">About Us</a>

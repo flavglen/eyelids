@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Headers,Http } from '@angular/http';
+import { Headers,Http, RequestOptions, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -34,9 +34,12 @@ export class WebapiService {
                     .catch(this.handleError);
   }
 
-  saveCategory(data): Promise<number> {
+  saveCategory(data,token): Promise<number> {
     data.segment='savecategory';
-    return this.http.post(this.apiUrl,JSON.stringify(data))
+    // add authorization header with jwt token
+    let headers = new Headers({ 'Authorization': 'Bearer ' + token});
+    let options = new RequestOptions({ headers: headers });
+    return this.http.post(this.apiUrl,JSON.stringify(data),options)
                     .map((response) => response.json())
                     .toPromise()
                     .catch(this.handleError);
