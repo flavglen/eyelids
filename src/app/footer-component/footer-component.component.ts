@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+declare var $:any;
 
 @Component({
   selector: 'app-footer-component',
@@ -46,6 +47,23 @@ currentUser:object;
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.router.navigate(['/']);
     window.location.reload();
+  }
+  scrollTo(type){
+    if(type ==='login'){
+      this.router.navigate(['/login']);
+        setTimeout(function(){
+          $('html, body').animate({
+            scrollTop: $(".loginForm").offset().top
+        }, 1000);
+      })
+    }else if(type ==='upload'){
+      this.router.navigate(['/upload']);
+        setTimeout(function(){
+          $('html, body').animate({
+            scrollTop: $(".myuploadWrapper").offset().top
+        }, 1000);
+      })
+    }
   }
 
 }

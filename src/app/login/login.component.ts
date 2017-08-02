@@ -17,6 +17,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+ validation(valid){
+      if(!valid){
+        alert('Please enter username and password');
+      }
+ }
   login() {
         this.loading = true;
         this.ws.login(this.model.username, this.model.password)
@@ -29,7 +34,7 @@ export class LoginComponent implements OnInit {
                 } else {
                     // login failed
                     alert('Login Failed ,Try Again');
-                    this.error = 'Username or password is incorrect';
+                    //this.error = 'Username or password is incorrect';
                     this.loading = false;
                 }
             });

@@ -1,4 +1,4 @@
-<div class="container" style="min-height:250px;">
+<div class="container myuploadWrapper" style="min-height:250px;">
   <div class="row">
      <div class="col-lg-12">
         <h3>Upload Gallery </h3>
@@ -8,7 +8,7 @@
          <div class="form-group" *ngIf="selectedType?.id ===1">
             <p-dropdown [options]="imageCategory" styleClass="form-control"  [(ngModel)]="selectedCategory"></p-dropdown>
         </div>
-        <p-fileUpload (onBeforeUpload)="customUpload($event)" [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="http://eyelids.in/api/upload.php" multiple="multiple"></p-fileUpload>
+        <p-fileUpload (onBeforeUpload)="customUpload($event)" (onBeforeSend)="modifyheader($event)" [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="http://eyelids.in/api/upload.php" multiple="multiple"></p-fileUpload>
      </div>
   </div>
 </div>

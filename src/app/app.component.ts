@@ -69,11 +69,14 @@ export class AppComponent   implements OnInit{
 
   saveCategory(data){
     this.ws.saveCategory(data,this.currentUser.token).then((result)=>{
-        if(result===1){
+        if(result.hasOwnProperty('success')){
+          alert('Category has been edited Successfully');
           data.enabled=false;
+        }else{
+          alert('There was and error,Please try again');
         }
     })
-    .catch((error) => console.error(error));
+    .catch((error) =>   alert('There was and error,Please try again'));
   }
 
 
