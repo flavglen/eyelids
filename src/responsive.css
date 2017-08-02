@@ -133,7 +133,7 @@ margin-left:0 !important;
   }
 
 .faq
-{  
+{
     padding: 24px 30px;
 }
 .faqImg
@@ -144,7 +144,7 @@ margin: 0 auto;
 
 
 @media (max-width: 480px) {
-   
+
 .logo {
     left: 0;
     position: absolute;
@@ -293,7 +293,12 @@ font-size:15px;
     line-height: 1.8;
     padding: 20px 0 14px 15px;
 }
-  }
+.eventGallery {
+    right: 0;
+    top: 179px;
+}
+
+}
 @media (min-width: 481px) and (max-width: 767px) {
 
 /*circullum overrride*/
@@ -330,6 +335,10 @@ font-size:15px;
 }
 .footerBg {
     height: auto;
+}
+.eventGallery {
+    right: 0;
+    top: 220px;
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -378,7 +387,7 @@ font-size:15px;
       background-size: contain;
       background-repeat: no-repeat;
       top:15px;
- 
+
   }
   .header .header-content{
     height:auto !important;
@@ -427,7 +436,7 @@ font-size:15px;
 }
 /*faq override*/
 .faq
-{ 
+{
     padding: 24px 30px;
 }
 .faqTitle {
@@ -436,6 +445,11 @@ font-size:15px;
 
 .faqTitle h3 {
  font-size:11px;
+}
+
+.eventGallery {
+    left: -41px;
+    top: 165px;
 }
 
  }
