@@ -518,3 +518,12 @@ video {
     text-align: center;
     top: 297px;
   }
+.loginForm
+{
+padding: 70px 0;
+}
+.loginForm h2
+{
+color: #ed2c69;
+padding-bottom:22px;
+}
