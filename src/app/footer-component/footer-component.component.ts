@@ -9,7 +9,7 @@ declare var $:any;
 })
 export class FooterComponentComponent implements OnInit {
 footerData:any[];
-currentUser:object;
+currentUser:{username:string,token:string};
   constructor(private router: Router) {
     /*check i\user logggedin*/
     let tok=sessionStorage.getItem('currentUser');
