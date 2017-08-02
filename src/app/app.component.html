@@ -113,11 +113,14 @@
    <div class="container" >
     <div class="col-lg-4 col-md-4 col-sm-4 " *ngFor="let x of imageCategory">
         <input pInputText  [disabled]="!x.enabled" [(ngModel)]="x.value.name" class="eventGallery">
+        <div class="ediButtons">
         <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="saveCategory(x)">Save</button>
         <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="x.enabled=false">Cancel</button>
         <button *ngIf="currentUser && currentUser.username" [hidden]="x.enabled " class="ui-button-info" style="color:#000" (click)="x.enabled=true">Edit</button>
+      </div>
       <a (click)="loadGallery(x.value.id)">
        <img src="/assets/img/colorsday.png" alt="colorC" class="img-responsive">
+        
      </a>
   </div>
 </div>
