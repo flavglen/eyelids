@@ -531,7 +531,9 @@ video {
     position: absolute;
     text-align: center;
     top: 297px;
-  }
+    right:48px;
+    cursor:pointer;
+    }
 .loginForm
 {
 padding: 70px 0;
@@ -540,4 +542,28 @@ padding: 70px 0;
 {
 color: #ed2c69;
 padding-bottom:22px;
+}
+.ediButtons
+{
+  position: absolute;
+  top: 340px;
+  left: 100px;
+}
+ .ui-dropdown
+{
+  width:339px!important;
+}
+.ui-inputtext
+  {
+    padding: 0!important;
+  }
+.ui-fileupload
+{
+  width:45%!important;
+}
+.ui-dropdown:hover:not(.ui-state-disabled) {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0!important;
+}
+.eventGallery:hover{
+  color:black;
 }
