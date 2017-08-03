@@ -12,7 +12,11 @@ export class FileUploadComponent implements OnInit {
  imageCategory;
  selectedType:{id:number,name:string};
  selectedCategory:{id:number,name:string};
- constructor(private ws:WebapiService) { }
+ currentUser:{username:string,token:string};
+ constructor(private ws:WebapiService) {
+   let tok=sessionStorage.getItem('currentUser');
+   this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):null;
+ }
 
   ngOnInit() {
         this.mediaType = [];
@@ -29,8 +33,12 @@ export class FileUploadComponent implements OnInit {
 
   }
 
+
   customUpload(event){
       event.formData.append('categoryId',this.selectedCategory.id);
+  }
+  modifyheader(event){
+      event.xhr.setRequestHeader("Authorization", "Bearer " + this.currentUser.token);
   }
 
 }

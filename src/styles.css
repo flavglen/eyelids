@@ -46,6 +46,20 @@ margin: 0 auto;
   background: #000;
   border:none;
 }
+.rightQ{
+  position: absolute;
+  right: -31px;
+  top: 130px;
+}
+
+.leftQ{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+   position: relative;
+    top: 36px;
+    left: -148px;
+}
 
 /*Chart style overrride*/
 .ui-node-toggler{

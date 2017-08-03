@@ -21,6 +21,7 @@ export class AppComponent   implements OnInit{
   currentId:number=0;
   displayLogin:boolean=false;
   currentUser:{username:string,token:string};
+  video:string='';
   constructor(private _router:Router,private ws:WebapiService) {
       /*check i\user logggedin*/
       let tok=sessionStorage.getItem('currentUser');
@@ -52,8 +53,17 @@ export class AppComponent   implements OnInit{
          {vin: 'g43gwwg', year: 1998, brand: 'Renault', color: 'White'}
        ]
 
+       /*image category*/
        this.ws.getImageCategory().then((result)=>{
              this.imageCategory=result;
+       })
+       .catch((error) => console.error(error));
+
+       /*video*/
+       this.ws.getVideo().then((result)=>{
+           if(result.hasOwnProperty('uploads_name')){
+             this.video= result['uploads_name'];
+           }
        })
        .catch((error) => console.error(error));
   }
@@ -69,11 +79,14 @@ export class AppComponent   implements OnInit{
 
   saveCategory(data){
     this.ws.saveCategory(data,this.currentUser.token).then((result)=>{
-        if(result===1){
+        if(result.hasOwnProperty('success')){
+          alert('Category has been edited Successfully');
           data.enabled=false;
+        }else{
+          alert('There was and error,Please try again');
         }
     })
-    .catch((error) => console.error(error));
+    .catch((error) =>   alert('There was and error,Please try again'));
   }
 
 

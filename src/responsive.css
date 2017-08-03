@@ -3,6 +3,9 @@
   header{
     background-size: cover;
   }
+  .rightQ,.leftQ{
+    display: none;
+  }
   .flex-control-nav {
     bottom: -26px !important;
 }

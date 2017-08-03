@@ -137,11 +137,10 @@
         <source src="{{videoSource}}" type="video/mp4" />
         Browser not supported
     </video>-->
-  <video  autoplay>
- <source src="/assets/video/events.mp4" type="video/mp4">
-  <source src="/assets/video/events.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
+  <video controls *ngIf="video!=''">
+     <source [src]="video" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
 </div>
 
 

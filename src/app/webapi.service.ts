@@ -34,6 +34,13 @@ export class WebapiService {
                     .catch(this.handleError);
   }
 
+  getVideo(): Promise<any[]> {
+    return this.http.get(this.apiUrl+'?segment=getVideo')
+                    .map((response) => response.json())
+                    .toPromise()
+                    .catch(this.handleError);
+  }
+
   saveCategory(data,token): Promise<number> {
     data.segment='savecategory';
     // add authorization header with jwt token
