@@ -12,6 +12,7 @@
 								<li><a *ngIf="!currentUser" (click)="scrollTo('login')">Login</a></li>
 								<li><a *ngIf="currentUser && currentUser.username" (click)="logout()">Logout</a></li>
 								<li><a *ngIf="currentUser && currentUser.username"  (click)="scrollTo('upload')">Upload</a></li>
+								<li><a *ngIf="currentUser && currentUser.username"  (click)="scrollTo('gallery')">manage</a></li>
                <!-- <li>
                     <a href="#">About Us</a>
                 </li>

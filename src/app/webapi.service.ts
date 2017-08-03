@@ -41,6 +41,20 @@ export class WebapiService {
                     .catch(this.handleError);
   }
 
+  getAllImages(): Promise<any[]> {
+    return this.http.get(this.apiUrl+'?segment=getAllImages')
+                    .map((response) => response.json())
+                    .toPromise()
+                    .catch(this.handleError);
+  }
+
+  deleteImage(id): Promise<object> {
+    return this.http.get(this.apiUrl+'?segment=deleteImage&id='+ id)
+                    .map((response) => response.json())
+                    .toPromise()
+                    .catch(this.handleError);
+  }
+
   saveCategory(data,token): Promise<number> {
     data.segment='savecategory';
     // add authorization header with jwt token

@@ -63,7 +63,15 @@ currentUser:{username:string,token:string};
             scrollTop: $(".myuploadWrapper").offset().top
         }, 1000);
       })
+    }else if(type ==='gallery'){
+      this.router.navigate(['/manage']);
+        setTimeout(function(){
+          $('html, body').animate({
+            scrollTop: $(".myuploadWrapper").offset().top
+        }, 1000);
+      })
     }
+
   }
 
 }

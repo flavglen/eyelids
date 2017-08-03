@@ -1,0 +1,22 @@
+<div class="container myuploadWrapper" style="min-height:250px;padding:25px 0 0 0">
+<p-dataGrid [value]="data" [paginator]="true" [rows]="20">
+    <p-header>
+        Manage Gallery
+    </p-header>
+    <ng-template let-gallery pTemplate="item">
+        <div style="padding:3px" class="ui-g-12 ui-md-3">
+            <p-panel [header]="gallery.title" [style]="{'text-align':'center'}">
+                <img [src]="gallery.source" width="60" *ngIf="gallery.type=='Image'">
+                 <video  *ngIf="gallery.type=='Video'"  controls style="width: 100%;height: 101px;">
+                   <source [src]="gallery.source" type="video/mp4">
+                     Your browser does not support the video tag.
+                  </video>
+
+                <div class="car-detail">{{gallery.type}} - {{gallery.category}}</div>
+                <hr class="ui-widget-content" style="border-top:0">
+                <i class="fa fa-trash-o" (click)="removeItem(gallery)" style="cursor:pointer;font-size:25px;"></i>
+            </p-panel>
+        </div>
+    </ng-template>
+</p-dataGrid>
+</div>
