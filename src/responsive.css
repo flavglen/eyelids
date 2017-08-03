@@ -300,6 +300,23 @@ font-size:15px;
     right: 0;
     top: 179px;
 }
+.ui-fileupload {
+    width: 100%!important;
+}
+.ui-dropdown {
+    width: 274px!important;
+}
+.ui-button-text{
+  font-size:12px;
+}
+.ui-fileupload-files
+{
+  margin-left:-20px;
+}
+.ui-button-icon-only
+{
+  margin-left: -20px;
+}
 
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -454,7 +471,9 @@ font-size:15px;
     left: -41px;
     top: 165px;
 }
-
+.ui-fileupload {
+    width: 71%!important;
+}
  }
 
 
@@ -486,6 +505,9 @@ font-size:15px;
 }
 .faqTitle {
     top: 64px;
+}
+.ui-fileupload {
+    width: 71%!important;
 }
  }
 

@@ -537,12 +537,14 @@ video {
 .loginForm
 {
 padding: 70px 0;
+background-color: #d4df51;
 }
-.loginForm h2
+.loginForm h2, .uploadText
 {
 color: #ed2c69;
 padding-bottom:22px;
 }
+
 .ediButtons
 {
   position: absolute;
@@ -566,4 +568,18 @@ padding-bottom:22px;
 }
 .eventGallery:hover{
   color:black;
+}
+.loginBtn{
+ padding: 10px 33px;
+ background-color:#faac1b;
+ color:white;
+ font-weight: bold;
+}
+.loginBtn:hover{
+  background-color:#ed2c69;
+  color:white;
+}
+.ui-button-text
+{
+  font-size: 12px;
 }
