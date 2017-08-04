@@ -17,6 +17,7 @@ export class AppComponent   implements OnInit{
   data: TreeNode[];
   galletyModalDisplay:boolean;
   images: any[];
+  imageCat:any[];
   imageCategory:any[];
   currentId:number=0;
   displayLogin:boolean=false;
@@ -30,6 +31,7 @@ export class AppComponent   implements OnInit{
   currentUrl:any;
   ngOnInit() {
     this.images = [];
+    this.imageCat=['colorsday.png','festivals.png','fancydress.png'];
     this.imageCategory=[];
     this.galletyModalDisplay=false;
     this._router.events.subscribe((url:any) => this.currentUrl =url.url);
