@@ -10,7 +10,7 @@ export class WebapiService {
   apiUrl:string='http://eyelids.in/api/service.php';
   public token: string;
   constructor(private http: Http) {
-    /*var currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+    /*let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
     this.token = currentUser && currentUser.token;*/
    }
 
@@ -41,15 +41,19 @@ export class WebapiService {
                     .catch(this.handleError);
   }
 
-  getAllImages(): Promise<any[]> {
+  getAllImages(token): Promise<any[]> {
+
     return this.http.get(this.apiUrl+'?segment=getAllImages')
                     .map((response) => response.json())
                     .toPromise()
                     .catch(this.handleError);
   }
 
-  deleteImage(id): Promise<object> {
-    return this.http.get(this.apiUrl+'?segment=deleteImage&id='+ id)
+  deleteImage(id,token): Promise<object> {
+    /*let headers = new Headers({ 'Authorization': 'Bearer ' + token});
+    let options = new RequestOptions({ headers: headers });*/
+
+    return this.http.get(this.apiUrl+'?segment=deleteImage&token='+token+'&id='+ id,)
                     .map((response) => response.json())
                     .toPromise()
                     .catch(this.handleError);

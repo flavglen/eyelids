@@ -8,15 +8,20 @@ import {WebapiService} from '../webapi.service';
 })
 export class ManageGalleryComponent implements OnInit {
   data:any[];
+  currentUser:{username:string,token:string};
 
-  constructor(private ws:WebapiService) { }
+  constructor(private ws:WebapiService) {
+
+
+   }
 
   ngOnInit() {
    this.data=[];
-
+   let tok=sessionStorage.getItem('currentUser');
+   this.currentUser =(typeof tok !='undefined') ?JSON.parse(tok):{};
     /*fetch all images*/
     /*video*/
-    this.ws.getAllImages().then((result)=>{
+    this.ws.getAllImages(this.currentUser.token).then((result)=>{
         if(!result.hasOwnProperty('error')){
           this.data= result;
         }
@@ -28,7 +33,7 @@ export class ManageGalleryComponent implements OnInit {
   removeItem(data){
     let r = confirm("Are You Sure You want to delete File?");
     if (r == true) {
-    this.ws.deleteImage(data.pk_uploads).then((result)=>{
+    this.ws.deleteImage(data.pk_uploads,this.currentUser.token).then((result)=>{
           if(result['success'] == 1){
             /*console.log(this.data.indexOf(data));
             this.data.splice(this.data.indexOf(data),1);
