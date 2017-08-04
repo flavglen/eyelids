@@ -334,6 +334,14 @@ video {
 .ediButtons {
     top: 216px;
 }
+.ui-organizationchart .ui-organizationchart-table > tr > td {
+    padding: 0.5px!important;
+
+}
+.ui-organizationchart{
+margin-top:10px;
+}
+
 }
 @media (min-width: 481px) and (max-width: 767px) {
 
