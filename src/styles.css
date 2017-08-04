@@ -463,6 +463,7 @@ margin: 0 auto;
     background-image:url("/assets/img/circullumNewBg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+     box-shadow: -10px 0 10px -10px #d18128;
 }
 .circullumImg
 {
@@ -507,7 +508,7 @@ margin: 0 auto;
     padding-left: 22px;
     }
 video {
-    width: 100%;
+    width: 85%;
     height: 535px;
 }
 .faqTitle {

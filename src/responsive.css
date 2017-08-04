@@ -305,8 +305,9 @@ padding-bottom: 15px;
     padding: 20px 0 14px 15px;
 }
 .eventGallery {
-    right: 0;
+    right: 42px;
     top: 179px;
+    font-size: 15px;
 }
 .ui-fileupload {
     width: 100%!important;
@@ -325,7 +326,14 @@ padding-bottom: 15px;
 {
   margin-left: -20px;
 }
-
+video {
+  height: auto;
+  margin-top: 21px;
+  width: 91%;
+}
+.ediButtons {
+    top: 216px;
+}
 }
 @media (min-width: 481px) and (max-width: 767px) {
 
@@ -480,11 +488,22 @@ padding-bottom: 15px;
 }
 
 .eventGallery {
-    left: -41px;
-    top: 165px;
+    font-size: 17px;
+    left: 14px;
+    top: 163px;
+    width: 198px;
+}
+.ediButtons {
+    left: 84px;
+    position: absolute;
+    top: 194px;
 }
 .ui-fileupload {
     width: 71%!important;
+}
+.eventsVideobg {
+
+    background-size: 100% 100%;
 }
  }
 
@@ -499,6 +518,11 @@ padding-bottom: 15px;
   /*footer  overrride*/
   .logodiv {
     margin-top: 125px;
+}
+
+.eventsVideobg {
+
+    background-size: 100% 100%;
 }
 .footerMenu {
     line-height: 1.3;

@@ -138,7 +138,7 @@
         <source src="{{videoSource}}" type="video/mp4" />
         Browser not supported
     </video>-->
-  <video controls *ngIf="video!=''">
+  <video controls *ngIf="video!=''" class="col-lg-offset-1">
      <source [src]="video" type="video/mp4">
     Your browser does not support the video tag.
     </video>
