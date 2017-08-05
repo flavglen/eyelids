@@ -341,7 +341,18 @@ video {
 .ui-organizationchart{
 margin-top:10px;
 }
+.ui-galleria-panel-wrapper{
+  width: auto!important;
+}
+.ui-galleria
+{
 
+  width: auto!important;
+}
+.ui-dialog {
+  left: 4px;
+  width: 97%;
+}
 }
 @media (min-width: 481px) and (max-width: 767px) {
 
