@@ -609,3 +609,15 @@ color:#ed2c69!important;
     text-align: center;
     width: 100%!important;
 }
+.ui-widget-header{
+background:#ed2c69!important;
+}
+.ui-dialog-title,.ui-dialog-titlebar-icon
+{
+  color:white!important;
+}
+.ui-widget-content {
+    
+    border: 1px solid #ed2c69!important;
+    color: #ed2c69!important;
+}

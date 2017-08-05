@@ -524,6 +524,10 @@ margin-top:10px;
 
     background-size: 100% 100%;
 }
+.ui-dialog
+{
+top:220px!important;
+}
  }
 
 
