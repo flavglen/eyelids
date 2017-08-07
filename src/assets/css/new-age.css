@@ -93,8 +93,11 @@ p {
     margin-left: 60px;
   }
 .navbar-nav>li>a {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 42px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 16px;
+    line-height: 16px!important;
 }
 
 #mainNav{
@@ -105,6 +108,9 @@ p {
     background-color:transparent;
     border-top: 5px solid #ed2c69;
     border-bottom: 5px solid #ed2c69;
+    padding-bottom: 31.5px;
+    margin-top:-1px;
+    color: #fdcc52;
   }
 
 .navbar-right{
@@ -115,7 +121,7 @@ p {
     background: rgba(0,0,0,0.5);
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-        height: 80px;
+        height: 100px;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -179,7 +185,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/header_bg.jpg"), #7b4397;
+  background: url("../img/hedaerBg.png");
   background-repeat: no-repeat;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;

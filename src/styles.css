@@ -43,7 +43,7 @@ body{
 .flexslider{
 width: 60%;
 margin: 0 auto;
-  background: #000;
+  background: #ffffff;
   border:none;
 }
 .rightQ{
@@ -57,7 +57,7 @@ margin: 0 auto;
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
   transform: rotate(180deg);
    position: relative;
-    top: 36px;
+    top: -31px;
     left: -148px;
 }
 
@@ -89,10 +89,11 @@ margin: 0 auto;
 }
 .slide h4{
   line-height:35px;
+  font-size: 18px;
 }
 .flexWrap{
   width:100%;
-  background: #000;
+  background: #ffffff;
   padding-bottom: 27px;
 }
 .quoteBy{
@@ -210,9 +211,11 @@ margin: 0 auto;
 .mgt{
   padding:25px 0;
   min-height: 500px;
-  background: #000;
+  background: #ffffff;
 }
-
+.circleInner span{
+  font-size:12px;
+}
 .colorPink{
   color:#ed2c69;
 }
@@ -293,6 +296,9 @@ margin: 0 auto;
     padding: 0px;
 
 }
+.logo{
+    margin-top: 21px;
+  }
 .logodiv
 {
   margin-top:165px;
@@ -308,7 +314,7 @@ margin: 0 auto;
 	list-style:none;
 }
 .footerMenu ul li a{
-	font-size:24px;
+	font-size:20px;
 	color:white;
 	text-align:left !important;
 }
