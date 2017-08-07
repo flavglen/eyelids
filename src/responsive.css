@@ -120,6 +120,7 @@ margin-left:0 !important;
 .gCircle{
     left: 9%;
     bottom: -307px;
+    left: 9.2%;
 }
 .admissionText2{
       position: static;
@@ -178,7 +179,7 @@ margin: 0 auto;
 /*About overrride*/
 
 .aboutusWrap {
-    margin: 15px 0px 15px 20px;
+    margin: 15px 0px 15px 12%;
 }
 
 /*circullum logo overrride*/
@@ -245,7 +246,7 @@ padding-bottom: 15px;
     bottom: 316px;
 }
 .gCircle {
-    left: 2%;
+    left: 9.2%;
 }
 .contactUs address {
     font-size: 15px;
@@ -302,14 +303,15 @@ padding-bottom: 15px;
 .contactimg
 {
     margin-bottom: 0;
-    margin-top: 25px;
-    padding-left: 32px;
+    margin-top: 0px;
     padding-top: 15px;
+    padding-left: 15%;
 }
 .map address {
     font-size: 15px;
     line-height: 1.8;
-    padding: 20px 0 14px 15px;
+    padding: 20px 0 14px 0px;
+    text-align: center;
 }
 .eventGallery {
     right: 42px;

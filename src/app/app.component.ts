@@ -85,10 +85,10 @@ export class AppComponent   implements OnInit{
           alert('Category has been edited Successfully');
           data.enabled=false;
         }else{
-          alert('There was and error,Please try again');
+          alert('There was an error,Please try again');
         }
     })
-    .catch((error) =>   alert('There was and error,Please try again'));
+    .catch((error) =>   alert('There was an error,Please try again'));
   }
 
 

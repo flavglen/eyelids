@@ -288,7 +288,7 @@ margin: 0 auto;
 .footerBg
 {
 	background-image:url("assets/img/footerBg.png");
- 	min-height:461px;
+ 	min-height:450px;
 	background-repeat: no-repeat;
   /*   background-size: contain; */
     background-position: center center;
@@ -346,8 +346,8 @@ margin: 0 auto;
 	background-color:#202020;
 }
 .copyRight p {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     font-size: 16px;
     color: white;
 }

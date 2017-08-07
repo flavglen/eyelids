@@ -1,7 +1,7 @@
 <footer class="footerPadding">
 	 <div class="container-fluid footerBg">
 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 logodiv"><a href="index.html" >
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 logodiv"><a href="/" >
 			<img src="/assets/img/logo.png" class="img-responsive" alt="logo.png"></a></div>
 			<div class="col-lg-2 col-md-4 col-sm-3 col-xs-6 footerMenu">
             <ul class="">
@@ -9,10 +9,10 @@
                     <a href="#"> {{footData.footerMenu}}</a>
                 </li>
 
-								<li><a *ngIf="!currentUser" (click)="scrollTo('login')">Login</a></li>
-								<li><a *ngIf="currentUser && currentUser.username" (click)="logout()">Logout</a></li>
-								<li><a *ngIf="currentUser && currentUser.username"  (click)="scrollTo('upload')">Upload</a></li>
-								<li><a *ngIf="currentUser && currentUser.username"  (click)="scrollTo('gallery')">manage</a></li>
+								<li><a style="cursor:pointer" *ngIf="!currentUser" (click)="scrollTo('login')">Login</a></li>
+								<li><a style="cursor:pointer" *ngIf="currentUser && currentUser.username" (click)="logout()">Logout</a></li>
+								<li><a style="cursor:pointer" *ngIf="currentUser && currentUser.username"  (click)="scrollTo('upload')">Upload</a></li>
+								<li><a style="cursor:pointer" *ngIf="currentUser && currentUser.username"  (click)="scrollTo('gallery')">manage</a></li>
                <!-- <li>
                     <a href="#">About Us</a>
                 </li>
@@ -36,7 +36,7 @@
 
 		 </div>
 		 <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6 contactUs pull-right">
-		 <h2 class="text-left">Contact Us</h2>
+		 <h2 class="text-left" style="font-size:16px">Contact Us</h2>
 		  <address>
 							Eyelids Kidszone,<br/>
 							#35/36, 11th cross, Nanjappa <br>Layout<br/>
