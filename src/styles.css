@@ -396,15 +396,16 @@ padding-bottom:8px;
   /*   background-size: contain; */
     background-position: center center;
     background-size: 100% auto;
+        margin-top: -93px;
 }
 .evnt
 {
 	background-image:url("/assets/img/eventsBgfirst.png");
-	/* height:613px; */
+
 	background-repeat: no-repeat;
-  /*   background-size: contain; */
-    background-position: center center;
-    background-size: 100% auto;
+  padding-top: 0;
+  background-position: center center;
+  background-size: 100% auto;
 }
 .circullumLeftBg
 {
@@ -432,6 +433,7 @@ padding-bottom:8px;
     background: #feb329;
     position: relative;
     margin-top:150px;
+    margin-bottom:80px;
 
 
 }
@@ -555,7 +557,7 @@ video {
     text-align: center;
     top: 297px;
     right:48px;
-    cursor:pointer;
+    cursor: pointer!important;
     }
 .loginForm
 {
@@ -631,4 +633,14 @@ background:#ed2c69!important;
 
     border: 1px solid #ed2c69!important;
     color: #ed2c69!important;
+}
+#events h3
+{
+
+    color: #ed2c69;
+    text-align: center;
+    font-weight :bold;
+    font-size:32px;
+    padding-bottom:12px;
+
 }

@@ -111,8 +111,9 @@
 
 
 <section id="events" class=" container-fluid evnt">
+  <h3>Events</h3>
    <div class="container" >
-    <div class="col-lg-4 col-md-4 col-sm-4 " *ngFor="let x of imageCategory;let i=index">
+    <div class="col-lg-4 col-md-4 col-sm-4 " *ngFor="let x of imageCategory;let i=index" style="cursor:pointer;">
         <input pInputText  [disabled]="!x.enabled" [(ngModel)]="x.value.name" class="eventGallery">
         <div class="ediButtons">
         <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="saveCategory(x)">Save</button>
@@ -120,7 +121,7 @@
         <button *ngIf="currentUser && currentUser.username" [hidden]="x.enabled " class="ui-button-info" style="color:#000" (click)="x.enabled=true">Edit</button>
       </div>
       <a (click)="loadGallery(x.value.id)">
-       <img src="/assets/img/{{imageCat[i]}}" alt="colorC" class="img-responsive">
+       <img src="/assets/img/{{imageCat[i]}}" alt="colorC" class="img-responsive eventSimg">
 
      </a>
   </div>

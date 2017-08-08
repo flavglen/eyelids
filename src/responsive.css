@@ -6,6 +6,11 @@
   #adm{
         margin-top: 35px;
   }
+  .eventSimg
+  {
+    padding-bottom:12px;
+    margin:0 auto;
+  }
   .missionOuterWrap
   {
     background-size:cover;
@@ -64,7 +69,6 @@ section.download{
    padding-top: 101px  !important;
    width: 100%  !important;;
    text-align: center;
-   /*padding-left: 38px  !important;*/
    margin-left:0;
   }
   .aboutRight {
@@ -133,14 +137,11 @@ margin-left:0 !important;
     padding: 1.5em 0.75em !important;
 }
 .gCircle{
-    /*left: 9%;
-    bottom: -307px;
-    left: 9.2%;*/
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-      bottom: -307px;
+    bottom: -307px;
 }
 .admissionText2{
       position: static;
@@ -170,6 +171,12 @@ margin: 0 auto;
 }
 .nav > li > a:focus, .nav > li > a:hover {
     padding-bottom: 9.5px;
+}
+.evnt {
+    background-size: 100% 100%;
+}
+video {
+    height: auto;
 }
 }
 
@@ -304,12 +311,14 @@ padding-bottom: 15px;
 }
 /*eventsVideo override*/
 .eventsVideobg {
-    height: 183px;
+  /*  height: 183px;*/
     padding-bottom: 0;
     padding-top: 0;
+    background-size: 100% 100%;
+
 }
 .evnt {
-    padding-bottom: 0;
+    /*padding-bottom: 0;*/
     padding-top: 20px;
      background-size: 100% 100%;
     margin-top: 20px;
@@ -424,8 +433,9 @@ margin-top:10px;
     height: auto;
 }
 .eventGallery {
-    right: 0;
-    top: 220px;
+    left: 90px;
+    top: 388px;
+    position: relative;
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -562,7 +572,11 @@ top:220px!important;
 }
 .navbar-nav > li > a {
     padding-left:  8px;
-      padding-right:  7px;
+    padding-right:  7px;
+}
+.evnt {
+    background-size: 100% 100%;
+
 }
  }
 
@@ -610,6 +624,12 @@ top:220px!important;
     padding-left: 0px!important;
     padding-right: 0px!important;
 }
+.eventGallery {
+    font-size: 20px;
+    text-align: center;
+    top: 241px;
+    right: 48px;
+}
  }
  @media (max-width: 1275px) and (min-width: 1200px)
 {
@@ -626,4 +646,14 @@ top:220px!important;
 }
 }
 
+
+ @media (max-width: 480px) and (min-width: 420px)
+ {
+.eventGallery {
+    left: 69px;
+    top: 320px;
+    font-size: 15px;
+    position: relative;
+  }
+}
 @media (min-width: 1200px) { }
