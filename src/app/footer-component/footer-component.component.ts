@@ -18,27 +18,40 @@ currentUser:{username:string,token:string};
 
  ngOnInit() {
     this.footerData=[{
-      footerMenu:'Home'
+      footerMenu:'Home',
+      url:'/'
     },
    {
-      footerMenu:'About Us'
+      footerMenu:'About Us',
+       url:'about'
     },
     {
-      footerMenu:'Admission'
+      footerMenu:'Admission',
+      url:'adm'
     },
     {
-      footerMenu:'Circullam'
+      footerMenu:'Circullam',
+      url:'circullum'
     },
     {
-      footerMenu:'Events'
+      footerMenu:'Events',
+      url:'events'
     },
     {
-      footerMenu:'FAQ'
+      footerMenu:'FAQ',
+        url:'faq'
     },
     {
-      footerMenu:'Contact Us'
+      footerMenu:'Contact Us',
+      url:'contact'
     }
   ]
+  }
+
+  navigateTo(page){
+    $('html, body').animate({
+         scrollTop: $("#"+page).offset().top
+     }, 2000);
   }
 
   logout(){

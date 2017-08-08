@@ -3,6 +3,19 @@
   header{
     background-size: cover;
   }
+  #adm{
+        margin-top: 35px;
+  }
+  .missionOuterWrap
+  {
+    background-size:cover;
+  }
+  .circle img{
+      left: 10px !important;
+  }
+  .circleMiddle img{
+    left: 35px !important;
+  }
   .rightQ,.leftQ{
     display: none;
   }
@@ -43,13 +56,15 @@ section.download{
  }
  .aboutusWrap{
    margin-top:0;
+   background-position: center;
+   margin-left:0 !important;
  }
  .aboutUsText {
    margin-top: 0  !important;;
    padding-top: 101px  !important;
    width: 100%  !important;;
-   text-align: left;
-   padding-left: 38px  !important;
+   text-align: center;
+   /*padding-left: 38px  !important;*/
    margin-left:0;
   }
   .aboutRight {
@@ -118,9 +133,14 @@ margin-left:0 !important;
     padding: 1.5em 0.75em !important;
 }
 .gCircle{
-    left: 9%;
+    /*left: 9%;
     bottom: -307px;
-    left: 9.2%;
+    left: 9.2%;*/
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+      bottom: -307px;
 }
 .admissionText2{
       position: static;
@@ -155,7 +175,9 @@ margin: 0 auto;
 
 
 @media (max-width: 480px) {
-
+  .circleMiddle img {
+      left: 20px !important;
+  }
 .logo {
     left: 0;
     position: absolute;
@@ -246,7 +268,7 @@ padding-bottom: 15px;
     bottom: 316px;
 }
 .gCircle {
-    left: 9.2%;
+    /*left: 9.2%;*/
 }
 .contactUs address {
     font-size: 15px;

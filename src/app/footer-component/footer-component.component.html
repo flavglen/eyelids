@@ -6,7 +6,7 @@
 			<div class="col-lg-2 col-md-4 col-sm-3 col-xs-6 footerMenu">
             <ul class="">
                 <li *ngFor="let footData of footerData">
-                    <a href="#"> {{footData.footerMenu}}</a>
+                    <a style="cursor:pointer" (click)="navigateTo(footData.url)"> {{footData.footerMenu}}</a>
                 </li>
 
 								<li><a style="cursor:pointer" *ngIf="!currentUser" (click)="scrollTo('login')">Login</a></li>
