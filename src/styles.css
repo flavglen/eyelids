@@ -190,7 +190,7 @@ margin: 0 auto;
   background:url('/assets/img/contact-Us.png');
   min-height:248px;
   margin-left: 41px;
-  margin-top: 32px;
+  margin-top: 76px;
   background-repeat: no-repeat;
 }
 
@@ -198,7 +198,7 @@ margin: 0 auto;
   width: 87%;
   text-align: center;
   margin: 0 auto;
-  padding: 25px 14px 54px 12px;
+  padding: 25px 14px 51px 12px;
   font-size:19px;
 }
 .missionWrap p{
@@ -243,6 +243,10 @@ margin: 0 auto;
 }
 .aboutRight p{
   letter-spacing: .9px;
+}
+.aboutSecondPara{
+margin-bottom: 13px;
+padding-bottom:8px;
 }
 .missionOuterWrap{
   background:url('/assets/img/mission.png');
@@ -524,8 +528,9 @@ video {
 }
   .faqTitle h3{
 
-    font-weight: bolder;
+    font-weight: normal;
     font-family: montserratregular !important;
+    font-size: 20px;
 }
 .faqHead
 {
