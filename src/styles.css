@@ -357,13 +357,26 @@ padding-bottom:8px;
 }
 .contactBg
 {
-	padding: 0px!important;
+	padding: 0px 0px 74px 0px!important;
 	background-color:#feb329;
 }
 .contactimg
 {
-	margin-top: 85px;
-    margin-bottom: 75px;
+  /*position:absolute;
+    width: 258px;*/
+    background:url('/assets/img/contact-Us.png');
+    min-height:248px;
+    background-repeat:no-repeat;
+    top: 44px;
+    left: 45px;
+}
+.contactimg h3 {
+  margin-top: 30%;
+  margin-left: 12%;
+  width: 48%;
+  text-align: center;
+  font-size: 36px;
+  color: #ed2c69;
 }
   .mailLink
   {
@@ -382,11 +395,15 @@ padding-bottom:8px;
 		padding: 0px!important;
 }
 .map address {
-    font-size: 21px;
+    font-size: 16px;
     text-align: left;
     line-height: 34px;
     color: white;
     padding: 36px 0px 0px 0px;
+}
+.mapClass
+{
+  margin-bottom: -6px;
 }
 .eventsVideobg
 {
