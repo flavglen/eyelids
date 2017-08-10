@@ -197,6 +197,11 @@ video {
     bottom: 15px !important;
     left: 62px !important;
   }
+.contactBg {
+    padding: 0px 0px 4px 0px!important;
+
+}
+
 }
 
 
@@ -655,6 +660,10 @@ top:220px!important;
     text-align: center;
     top: 241px;
     right: 48px;
+}
+.contactimg{
+  left:0px;
+  min-height: 406px
 }
  }
  @media (max-width: 1275px) and (min-width: 1200px)
