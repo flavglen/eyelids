@@ -12,7 +12,10 @@
         margin-top: 59px;
   }
   .contactimg {
-    margin-top: 0;
+    margin: 0 auto;
+    /* left: 0px; */
+    position: static;
+    width: 258px;
   }
   .eventSimg
   {
@@ -132,9 +135,9 @@ section.download{
     width: 100%;
 }
 .admissionText1 h3{
-text-align: center;
-padding-top: 10px;
-margin-left:0 !important;
+  text-align: center;
+  padding-top: 10px;
+  margin-left:0 !important;
 }
 
  .ui-organizationchart-table {
@@ -198,8 +201,19 @@ video {
     left: 62px !important;
   }
 .contactBg {
-    padding: 0px 0px 4px 0px!important;
+    padding: 34px 0px 4px 0px!important;
 
+}
+.map address {
+  text-align: center;
+}
+.contactimg h3 {
+    margin-top: 0%;
+    margin-left: 24%;
+    text-align: center;
+    font-size: 36px;
+    color: #ed2c69;
+    padding-top: 82px;
 }
 
 }
@@ -366,12 +380,12 @@ padding-bottom: 15px;
     margin-bottom: 0;
     margin-top: 0px;
     padding-top: 15px;
-    /*padding-left: 15%;*/
+    margin-left: 15%;
 }
 .map address {
     font-size: 15px;
     line-height: 1.8;
-    padding: 20px 0 14px 0px;
+    padding: 45px 0 14px 0px;
     text-align: center;
 }
 .eventGallery {
@@ -691,4 +705,15 @@ top:220px!important;
     position: relative;
   }
 }
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+  .map address {
+      padding: 36px 0px 0px 50px;
+  }
+}
+@media (max-width: 480px) and (min-width: 380px)
+{
+.contactimg {
+    left: 0px;
+    margin-left: 110px;
+}
+}
