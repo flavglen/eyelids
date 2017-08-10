@@ -3,8 +3,16 @@
   header{
     background-size: cover;
   }
+  .lastDate {
+    margin-left: 15px;
+    margin-top: 10px;
+   }
+
   #adm{
-        margin-top: 35px;
+        margin-top: 59px;
+  }
+  .contactimg {
+    margin-top: 0;
   }
   .eventSimg
   {
@@ -144,12 +152,14 @@ margin-left:0 !important;
     bottom: -307px;
 }
 .admissionText2{
-      position: static;
+      position: relative;
       height: 369px;
       width: 100%;
+      background-size: cover;
 }
 .chart {
     position: static;
+    margin-top: 20px;
   }
   .admissonHead h3{
       margin-top: 0;
@@ -158,9 +168,14 @@ margin-left:0 !important;
       margin-top: 0;
   }
 .admissionText2inner{
-        bottom: 247px;
+        /*bottom: 247px;*/
+        bottom:0;
   }
 
+  .circleInner {
+      position: static !important;
+      padding: 72px 0 0 49px;
+    }
 .faq
 {
     padding: 24px 30px;
@@ -178,10 +193,19 @@ margin: 0 auto;
 video {
     height: auto;
 }
+.admissionText2inner {
+    bottom: 15px !important;
+    left: 62px !important;
+  }
 }
 
 
 @media (max-width: 480px) {
+  .circleInner{
+    width: 266px;
+    height: 272px;
+    padding:0;
+  }
   .circleMiddle img {
       left: 20px !important;
   }
@@ -203,7 +227,7 @@ video {
     margin-top: 12px;
 }
 .admissionWrapper {
-    padding: 20px;
+    padding: 0px;
 }
 /*About overrride*/
 
@@ -213,8 +237,9 @@ video {
 
 /*circullum logo overrride*/
 .circullum {
-    margin-top: 310px;
+    margin-top: 0px;
     padding: 0px;
+    margin-bottom:0;
 }
 .circullumImage
 {
@@ -272,7 +297,7 @@ padding-bottom: 15px;
 
 
 .admissionText2inner {
-    bottom: 316px;
+    bottom: 0;
 }
 .gCircle {
     /*left: 9.2%;*/
@@ -336,7 +361,7 @@ padding-bottom: 15px;
     margin-bottom: 0;
     margin-top: 0px;
     padding-top: 15px;
-    padding-left: 15%;
+    /*padding-left: 15%;*/
 }
 .map address {
     font-size: 15px;
@@ -399,8 +424,8 @@ margin-top:10px;
 
 /*circullum overrride*/
 .circullum {
-
-    margin-top: 312px;
+    margin-top: 0px;
+    margin-bottom:0px;
 }
 .circullumBg
 {
@@ -577,11 +602,12 @@ top:220px!important;
 .evnt {
     background-size: 100% 100%;
 
-}
+   }
  }
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
   .aboutusWrap {
       width: 40%;
       margin: 0 auto;
