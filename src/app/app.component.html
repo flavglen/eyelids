@@ -95,10 +95,10 @@
             </div>
         </div>
         <div class="circleInner">
-          <div class="">
+          <div class="wrapAdm">
                 <h3 class="colorPink">Admission are open</h3>
                 <button pButton type="button" label="Download Form"></button> <br/>
-                <span>Fill up the form and handover by person</span>
+                <span class="filldate">Fill up the form and handover by person</span>
                 <p class="lastDate">Last Date:29 -06- 2017</p>
           </div>
         </div>
@@ -120,7 +120,7 @@
         <button [hidden]="!x.enabled" class="ui-button-info" style="color:#000" (click)="x.enabled=false">Cancel</button>
         <button *ngIf="currentUser && currentUser.username" [hidden]="x.enabled " class="ui-button-info" style="color:#000" (click)="x.enabled=true">Edit</button>
       </div>
-      <a (click)="loadGallery(x.value.id)">
+      <a (click)="loadGallery(x)">
        <img src="/assets/img/{{imageCat[i]}}" alt="colorC" class="img-responsive eventSimg">
 
      </a>
@@ -215,7 +215,7 @@ Feel free to <br> contact us</h3>
 
 <div *ngIf="currentUrl =='/'">
   <!--Gallery Dialog -->
-  <p-dialog header="Eyelids" [(visible)]="galletyModalDisplay">
+  <p-dialog [header]="currentGalleryname" [(visible)]="galletyModalDisplay">
   <p-galleria effect="slide" [images]="images" panelWidth="500" panelHeight="313" [showCaption]="false"></p-galleria>
   </p-dialog>
 </div>

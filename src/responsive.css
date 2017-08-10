@@ -11,6 +11,7 @@
   #adm{
         margin-top: 59px;
   }
+
   .contactimg {
     margin: 0 auto;
     /* left: 0px; */
@@ -220,6 +221,23 @@ video {
 
 
 @media (max-width: 480px) {
+  .wrapAdm h3{
+    font-size: 18px;
+    text-align: center;
+  }
+  .ui-button-text-only .ui-button-text {
+    padding: 1.25em 2em !important;
+  }
+  .wrapAdm{
+    margin-top:55px;
+  }
+  .wrapAdm button{
+    margin-left: 30px
+  }
+  .wrapAdm .filldate{
+      padding-left: 6px;
+    }
+
   .circleInner{
     width: 266px;
     height: 272px;
@@ -440,7 +458,6 @@ margin-top:10px;
 }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-
 /*circullum overrride*/
 .circullum {
     margin-top: 0px;

@@ -20,6 +20,7 @@ export class AppComponent   implements OnInit{
   imageCat:any[];
   imageCategory:any[];
   currentId:number=0;
+  currentGalleryname:string;
   displayLogin:boolean=false;
   currentUser:{username:string,token:string};
   video:string='';
@@ -72,8 +73,9 @@ export class AppComponent   implements OnInit{
 
  loadGallery(categoryId){
      this.galletyModalDisplay = true;
+     this.currentGalleryname=categoryId.value.name;
      /*Fetch image by category*/
-     this.ws.getImagesByCategory(categoryId).then((result)=>{
+     this.ws.getImagesByCategory(categoryId.value.id).then((result)=>{
         this.images=result;
      })
      .catch((error) => console.error(error));
