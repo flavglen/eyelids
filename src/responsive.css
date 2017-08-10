@@ -274,7 +274,7 @@ video {
 
 /*circullum logo overrride*/
 .circullum {
-    margin-top: 0px;
+    margin-top: 30px;
     padding: 0px;
     margin-bottom:0;
 }
@@ -407,9 +407,11 @@ padding-bottom: 15px;
     text-align: center;
 }
 .eventGallery {
-    right: 42px;
-    top: 179px;
+    /*right: 42px;*/
+    top: 189px;
     font-size: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .ui-fileupload {
     width: 100%!important;
@@ -460,7 +462,7 @@ margin-top:10px;
 @media (min-width: 481px) and (max-width: 767px) {
 /*circullum overrride*/
 .circullum {
-    margin-top: 0px;
+    margin-top:25px;
     margin-bottom:0px;
 }
 .circullumBg
