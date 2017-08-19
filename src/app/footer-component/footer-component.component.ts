@@ -30,7 +30,7 @@ currentUser:{username:string,token:string};
       url:'adm'
     },
     {
-      footerMenu:'Circullam',
+      footerMenu:'Circullum',
       url:'circullum'
     },
     {
