@@ -49,9 +49,13 @@ currentUser:{username:string,token:string};
   }
 
   navigateTo(page){
-    $('html, body').animate({
-         scrollTop: page ==='home'? 0 : $("#"+page).offset().top
-     }, 2000);
+    if(page == 'home'){
+      this.router.navigate(['/']);
+    }else{
+      $('html, body').animate({
+           scrollTop: page ==='home'? 0 : $("#"+page).offset().top
+       }, 2000);
+   }
   }
 
   logout(){
