@@ -65,9 +65,10 @@
         });
         function navigateTo(type){
           $('html, body').animate({
-               scrollTop: $("#"+type).offset().top
+               scrollTop: type ==='home'? 0 : $("#"+type).offset().top
            }, 2000);
         }
+
         </script>
 
 </body>

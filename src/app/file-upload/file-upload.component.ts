@@ -32,7 +32,13 @@ export class FileUploadComponent implements OnInit {
         .catch((error) => console.error(error));
 
   }
+  OnErr(event){
+    alert('There was an error while uploading files.Try again');
+  }
 
+  OnUp(event){
+    alert('Upload has been completed successfully.')
+  }
 
   customUpload(event){
       event.formData.append('categoryId',this.selectedCategory.id);

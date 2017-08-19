@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule }    from '@angular/http';
 import { NgModule } from '@angular/core';
-import {CarouselModule,PanelModule,DataGridModule, OrganizationChartModule,DialogModule,ButtonModule,FileUploadModule,DropdownModule,GalleriaModule} from 'primeng/primeng';
+import {CarouselModule,PanelModule,DataGridModule, AutoCompleteModule,OrganizationChartModule,DialogModule,ButtonModule,FileUploadModule,DropdownModule,GalleriaModule} from 'primeng/primeng';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderComponentComponent } from './slider-component/slider-component.component';
@@ -34,7 +34,7 @@ const appRoutes: Routes = [
     MenuComponent,
   ],
   imports: [
-    BrowserModule,PanelModule,DataGridModule,HttpModule,GalleriaModule,DialogModule,FileUploadModule,FormsModule,CarouselModule,DropdownModule,OrganizationChartModule,BrowserAnimationsModule,ButtonModule,RouterModule.forRoot(appRoutes)
+    BrowserModule,AutoCompleteModule,PanelModule,DataGridModule,HttpModule,GalleriaModule,DialogModule,FileUploadModule,FormsModule,CarouselModule,DropdownModule,OrganizationChartModule,BrowserAnimationsModule,ButtonModule,RouterModule.forRoot(appRoutes)
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

@@ -19,7 +19,7 @@ currentUser:{username:string,token:string};
  ngOnInit() {
     this.footerData=[{
       footerMenu:'Home',
-      url:'/'
+      url:'home'
     },
    {
       footerMenu:'About Us',
@@ -50,7 +50,7 @@ currentUser:{username:string,token:string};
 
   navigateTo(page){
     $('html, body').animate({
-         scrollTop: $("#"+page).offset().top
+         scrollTop: page ==='home'? 0 : $("#"+page).offset().top
      }, 2000);
   }
 
@@ -85,6 +85,12 @@ currentUser:{username:string,token:string};
       })
     }
 
+  }
+
+  top(){
+    $('html, body').animate({
+         scrollTop: 0
+     }, 2000);
   }
 
 }

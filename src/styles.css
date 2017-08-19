@@ -576,9 +576,10 @@ video {
     font-size: 25px;
     position: absolute;
     text-align: center;
-    top: 297px;
-    right:48px;
+    bottom: 53px;
     cursor: pointer!important;
+    left: 50%;
+    transform: translate(-50%, 0);
     }
 .loginForm
 {
@@ -594,8 +595,9 @@ padding-bottom:22px;
 .ediButtons
 {
   position: absolute;
-  top: 340px;
-  left: 100px;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
  .ui-dropdown
 {

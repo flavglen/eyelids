@@ -9,7 +9,7 @@
             <p-dropdown [options]="imageCategory" styleClass="form-control"  [(ngModel)]="selectedCategory"></p-dropdown>
         </div>
         <div class="form-group col-lg-offset-4 col-sm-offset-4 col-md-offset-4">
-         <p-fileUpload class="col-lg-offset-4" (onBeforeSend)="modifyheader($event)" (onBeforeUpload)="customUpload($event)" [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="http://eyelids.in/api/upload.php" multiple="multiple"></p-fileUpload>
+         <p-fileUpload (onError)="OnErr($event)" (onUpload)="OnUp($event)" class="col-lg-offset-4" (onBeforeSend)="modifyheader($event)" (onBeforeUpload)="customUpload($event)" [accept]="selectedType?.id ===1?'image/*':'video/*'" name="myfile[]" url="http://eyelids.in/api/upload.php" multiple="multiple"></p-fileUpload>
      </div>
      </div>
   </div>
