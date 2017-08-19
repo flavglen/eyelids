@@ -51,6 +51,9 @@ currentUser:{username:string,token:string};
   navigateTo(page){
     if(page == 'home'){
       this.router.navigate(['/']);
+      $('html, body').animate({
+           scrollTop: 0
+       }, 2000);
     }else{
       $('html, body').animate({
            scrollTop: page ==='home'? 0 : $("#"+page).offset().top
